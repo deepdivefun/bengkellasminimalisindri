@@ -25,7 +25,7 @@ const slideRight = () => {
 
   return (
     <section>
-    <div className="mx-6 my-24">
+    <div className="mx-6 md:my-24 my-6">
         <div className="container">
           <div className="flex justify-between">
             <h3 className="text-xl font-bold">Jasa Kami</h3>

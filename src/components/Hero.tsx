@@ -4,12 +4,12 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 const Hero = () => {
   return (
     <section className=''>
-      <div className='grid grid-cols-7 mx-6 py-3'>
+      <div className='md:grid grid-cols-7 mx-6 py-3'>
         <div className='col-span-4'>
-            <h1 className='text-8xl font-bold'>Indri Teknik Las</h1>
+            <h1 className='text-4xl md:text-8xl font-bold'>Indri Teknik Las</h1>
         </div>
         <div className='col-span-3'>
-            <h2 className='text-xl my-6'>
+            <h2 className='text-xl md:my-6 my-3'>
                 Melayani pembuatan dan servis <br /> pagar, kanopi, pintu
                 minimalis, jendela minimalis, railing dor
             </h2>
@@ -44,16 +44,16 @@ const Hero = () => {
             
           </div>
       </div> */}
-      <div className="relative mx-6">
+      <div className="md:relative mx-6">
         <img  src='/hero_img.jpg' alt="Avatar" className="object-cover w-full h-full" />
-        <div className="absolute w-full bottom-75 inset-y-12 p-3">
-          <div className='grid grid-cols-6 mx-12'>
+        <div className="md:absolute w-full bottom-75 inset-y-12 md:p-3 py-3">
+          <div className='md:grid grid-cols-6 md:mx-12'>
             <div className='col-span-3'>
 
             </div>
             <div className='col-span-3'>
-              <div className='bg-white p-6 rounded-md'>
-                <h2 className='text-[18px] text-black tracking-wide'>
+              <div className='bg-white md:p-6 rounded-md'>
+                <h2 className='text-[18px] text-justify text-black tracking-wide'>
                     Temukan sentuhan sempurna untuk rumah atau bisnis Anda! Mulai dari tangga elegan hingga kanopi yang fungsional, 
                   serta pagar, pintu, dan jendela yang kokoh, 
                   kami siap memenuhi semua kebutuhan rumah dan tempat bisnis Anda. Tidak hanya itu, 

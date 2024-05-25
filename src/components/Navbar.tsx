@@ -21,7 +21,7 @@ const Navbar = () => {
             <input
               type='text'
               placeholder='Temukan kebutuah anda'
-              className='border border-gray-300 rounded-full px-3 py-2 w-96 static text-sm'
+              className='border border-gray-300 rounded-full px-3 py-2 md:w-fit static text-sm'
             />
             <span className='absolute inset-y-0 right-0 flex items-center pr-3'>
               <button className='bg-orange-300 rounded-full p-1'>
@@ -30,7 +30,7 @@ const Navbar = () => {
             </span>
           </div>
         </div>
-        <div className='text-black'>
+        <div className='text-black hidden md:block'>
           <ul className='flex gap-5 items-center  cursor-pointer'>
             <li>
               <HomeIcon />

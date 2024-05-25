@@ -6,7 +6,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import googleMapPng from '../../public/google-maps.png'
 
 const containerStyle = {
-    width: '660px',
+  width: 'sm:w-full',
     height: '400px'
   };
   
@@ -36,9 +36,9 @@ const Location = () => {
       }, [])
     
       return isLoaded ? (
-        <div className='mx-6 mt-12'>
+        <div className='mx-6 md:mt-12 mt-6'>
             <h3 className='mb-6 font-semibold'>Lokasi Pelanayan Kami</h3>
-            <div className='grid grid-cols-6 justify-between gap-12'>
+            <div className='md:grid grid-cols-6 justify-between gap-12'>
                 <div className='col-span-3'>
                     <GoogleMap
                         mapContainerStyle={containerStyle}
@@ -48,10 +48,9 @@ const Location = () => {
                         onUnmount={onUnmount}
                     >
                         { /* Child components, such as markers, info windows, etc. */ }
-                        <></>
                         </GoogleMap>
                 </div>
-                <div className='border p-3 col-span-3'>
+                <div className='border p-3 col-span-3 mt-6'>
                     <div className='grid gap-16'>
                         <div className='flex gap-16' >
                           <img src="/google-maps.png" className='w-24 h-24' alt="" />
