@@ -12,12 +12,12 @@ const Navbar = () => {
         <div className='grid place-content-end text-white'>ID</div>
       </div>
 
-      <div className='flexBetween max-container padding-container relative z-30 py-6 bg-white'>
+      <div className='flexBetween max-container padding-container relative z-30 py-3 bg-white'>
         <div className='flex'>
           <Link href='/' className='text-black text-2xl mr-4'>
-            LOGO
+            <img src="/welding-mask.png" className='w-20' alt="Indri Teknik Las" />
           </Link>
-          <div className='relative'>
+          <div className='hidden relative'>
             <input
               type='text'
               placeholder='Temukan kebutuah anda'

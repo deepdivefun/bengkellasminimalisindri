@@ -19,7 +19,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <h1 className='text-center mt-20'>Di buat oleh : Faisal</h1>
+        <h1 className='text-center mt-20'></h1>
       </div>
     </>
   )

@@ -4,12 +4,13 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 const Hero = () => {
   return (
     <section className=''>
-      <div className='md:grid grid-cols-7 mx-6 py-3'>
+      <div className='md:grid grid-cols-7 mx-6 pb-3'>
         <div className='col-span-4'>
-            <h1 className='text-4xl md:text-8xl font-bold'>Indri Teknik Las</h1>
+            <h1 className='text-4xl md:text-7xl font-bold'>Indri Teknik Las</h1>
         </div>
         <div className='col-span-3'>
-            <h2 className='text-xl md:my-6 my-3'>
+            <h2 className='text-xl md:my-6'>
+              Bengkel Las & Minimalis <br />
                 Melayani pembuatan dan servis <br /> pagar, kanopi, pintu
                 minimalis, jendela minimalis, railing dor
             </h2>

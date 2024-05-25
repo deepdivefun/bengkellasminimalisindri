@@ -4,6 +4,7 @@ import React from 'react'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 import { FaMapMarkerAlt } from "react-icons/fa";
 import googleMapPng from '../../public/google-maps.png'
+import Link from "next/link";
 
 const containerStyle = {
   width: 'sm:w-full',
@@ -55,19 +56,29 @@ const Location = () => {
                         <div className='flex gap-16' >
                           <img src="/google-maps.png" className='w-24 h-24' alt="" />
                             <div>
-                              <h1 className='text-2xl font-bold mb-3'>Jakarta</h1>
-                              <span>Kami juga melayani daerah jakarta, Kunjungi Kami </span>
+                              <Link href='/jakarta'>
+                                <h1 className='text-2xl font-bold mb-3'>Jakarta</h1>
+                                <span>Kami juga melayani daerah jakarta, Kunjungi Kami </span>
+                              </Link>
                             </div>
                         </div>
-                        <div>
-                            {/* <FaMapMarkerAlt className='text-2xl' /> */}
-                            <h1>Jakarta</h1>
-                            <span>Kami juga melayani daerah jakarta</span>
+                        <div className='flex gap-16' >
+                          <img src="/google-maps.png" className='w-24 h-24' alt="" />
+                            <div>
+                              <Link href='/cikarang'>
+                                <h1 className='text-2xl font-bold mb-3'>Cikarang</h1>
+                                <span>Kami juga melayani daerah Cikarang, Kunjungi Kami </span>
+                              </Link>
+                            </div>
                         </div>
-                        <div>
-                            {/* <FaMapMarkerAlt className='text-2xl' /> */}
-                            <h1>Cibubur</h1>
-                            <span>Kami juga melayani daerah jakarta</span>
+                        <div className='flex gap-16' >
+                          <img src="/google-maps.png" className='w-24 h-24' alt="" />
+                            <div>
+                              <Link href='/bekasi'>
+                                <h1 className='text-2xl font-bold mb-3'>Bekasi</h1>
+                                <span>Kami juga melayani daerah Bekasi, Kunjungi Kami </span>
+                              </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
