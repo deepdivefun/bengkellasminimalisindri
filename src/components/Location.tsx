@@ -1,55 +1,18 @@
 "use client"
 
 import React from 'react'
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
-import { FaMapMarkerAlt } from "react-icons/fa";
-import googleMapPng from '../../public/google-maps.png'
+import { Map  }from './Map'
 import Link from "next/link";
-
-const containerStyle = {
-  width: 'sm:w-full',
-    height: '400px'
-  };
-  
-  const center = {
-    lat: -6.261862,
-    lng: 106.977896
-  };
   
 const Location = () => {
-    const { isLoaded } = useJsApiLoader({
-        id: 'google-map-script',
-        googleMapsApiKey: "AIzaSyBzsgpWGJOKxmxfzrVe-KoPuAAK41d8dSc"
-      })
+   
     
-      const [map, setMap] = React.useState(null)
-    
-      const onLoad = React.useCallback(function callback(map:any) {
-        // This is just an example of getting and using the map instance!!! don't just blindly copy!
-        const bounds = new window.google.maps.LatLngBounds(center);
-        map.fitBounds(bounds);
-    
-        setMap(map)
-      }, [])
-    
-      const onUnmount = React.useCallback(function callback(map:any) {
-        setMap(null)
-      }, [])
-    
-      return isLoaded ? (
+      return (
         <div className='mx-6 md:mt-12 mt-6'>
             <h3 className='mb-6 font-semibold'>Lokasi Pelanayan Kami</h3>
             <div className='md:grid grid-cols-6 justify-between gap-12'>
                 <div className='col-span-3'>
-                    <GoogleMap
-                        mapContainerStyle={containerStyle}
-                        center={center}
-                        zoom={10}
-                        onLoad={onLoad}
-                        onUnmount={onUnmount}
-                    >
-                        { /* Child components, such as markers, info windows, etc. */ }
-                        </GoogleMap>
+                  <Map/>
                 </div>
                 <div className='border p-3 col-span-3 mt-6'>
                     <div className='grid gap-16'>
@@ -84,7 +47,7 @@ const Location = () => {
                 </div>
             </div>
         </div>
-      ) : <></>
+      ) 
     }
     
 
