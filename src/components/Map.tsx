@@ -18,7 +18,7 @@ export function Map() {
 
             const { Map } = await loader.importLibrary('maps')
 
-            const { Marker } = await loader.importLibrary('marker') as google.maps.marker.AdvancedMarkerElement;
+            const { Marker } = await loader.importLibrary('marker') as google.maps.MarkerLibrary;
 
             const position = {
                 //-6.261894415835695, 106.97785376550225
