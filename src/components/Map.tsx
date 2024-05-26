@@ -5,7 +5,7 @@ import { Loader } from '@googlemaps/js-api-loader'
 
 export function Map() {
 
-    const mapRef = React.useRef(null)
+    const mapRef = React.useRef(null) 
 
     useEffect(() => {
 
@@ -32,7 +32,7 @@ export function Map() {
                 mapId:"NEXTJS_MAPID"
             }
 
-            const map = new Map (mapRef.current as HTMLDivElement, mapOptions);
+            const map = new Map (mapRef.current as any, mapOptions);
             
             // const marker = new Marker({
             //     map:map,

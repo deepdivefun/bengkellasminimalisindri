@@ -1,3 +1,4 @@
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -10,6 +11,7 @@ export default function JakartaPage() {
 
     return (
         <div>
+            <GoogleAnalytics/>
             Jakarta
         </div>
     )
