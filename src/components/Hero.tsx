@@ -16,7 +16,7 @@ const Hero = () => {
             </h2>
             <button className='p-3 rounded-full bg-white border border-green-400 text-black'>
               <WhatsAppIcon style={{ color: 'green' }} />
-              <a href="https://wa.me/087888798183" target="_blank" rel="noopener noreferrer">hubungi Whatsapp Kami</a>
+              <a href="https://wa.me/6287888798183" target="_blank" rel="noopener noreferrer">hubungi Whatsapp Kami</a>
             </button>
         </div>
       </div>
