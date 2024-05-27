@@ -21,11 +21,11 @@ const Contact = () => {
             Segera hubungi kami untuk konsultasi gratis dan mulailah mewujudkan 
             impian desain Anda dengan harga yang sesuai dengan kebutuhan Anda
             </h2>
-            <div className='flex gap-3 text-center mt-12'>
+            {/* <div className='flex gap-3 text-center mt-12'>
                 <div>email</div>
                 <div>whatsapp</div>
                 <div>Phone</div>
-            </div>
+            </div> */}
         </div>
         </section>
     )

@@ -1,51 +1,60 @@
-"use client"
+'use client'
 
-import React, {useEffect}  from 'react'
-import { Loader } from '@googlemaps/js-api-loader'
+import React, { useEffect, useState } from 'react';
+import { Loader } from '@googlemaps/js-api-loader';
+import type { Metadata } from 'next';
 
-export function Map() {
+export const metadata: Metadata = {
+    title: "Bengkel Las Jakarta",
+    description: 'Bengkel Las Jakarta Melayani pembuatan dan servis pagar, kanopi, pintu minimalis, jendela minimalis, railing dor',
+    
+  };
 
-    const mapRef = React.useRef(null) 
+interface MapProps {
+  lat: number;
+  lng: number;
+  className?: string;
+}
 
-    useEffect(() => {
+export function Map({ lat, lng, className }: MapProps) {
+  const mapRef = React.useRef(null);
+  const [map, setMap] = useState<google.maps.Map | null>(null);
 
-        const initMap = async () => {
+  useEffect(() => {
+    const initMap = async () => {
+      const loader = new Loader({
+        apiKey: process.env.NEXT_PUBLIC_MAPS_API_KEY as string,
+        version: 'weekly',
+      });
 
-            const loader = new Loader ({   
-            apiKey : process.env.NEXT_PUBLIC_MAPS_API_KEY as string,
-            version: 'weekly',
-            })
+      const { Map } = await loader.importLibrary('maps');
 
-            const { Map } = await loader.importLibrary('maps')
+      const position = {
+        lat,
+        lng,
+      };
 
-            const { Marker } = await loader.importLibrary('marker') as google.maps.MarkerLibrary;
+      const mapOptions: google.maps.MapOptions = {
+        center: position,
+        zoom: 15,
+        mapId: "NEXTJS_MAPID",
+      };
 
-            const position = {
-                //-6.261894415835695, 106.97785376550225
-                lat :-6.261894,
-                lng:106.977853
-            }
+      const mapInstance = new Map(mapRef.current as any, mapOptions);
+      setMap(mapInstance);
+    };
 
-            const mapOptions:  google.maps.MapOptions = {
-                center:position,
-                zoom:15,
-                mapId:"NEXTJS_MAPID"
-            }
+    initMap();
+  }, [lat, lng]);
 
-            const map = new Map (mapRef.current as any, mapOptions);
-            
-            // const marker = new Marker({
-            //     map:map,
-            //     position:position
-            // })
-        }
+  useEffect(() => {
+    if (map) {
+      const position = { lat, lng };
+      map.setCenter(position);
+    }
+  }, [lat, lng, map]);
 
-
-        initMap()
-
-    })
-
-    return (
-        <div className='h-96' ref={mapRef} ></div>
-    )
+  return (
+    <div className={className} ref={mapRef}></div>
+  );
 }

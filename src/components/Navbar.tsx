@@ -6,9 +6,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className='flexBetween padding-container item-center relative z-30 py-2 bg-zinc-800 text-sm'>
-        <Link href='/' className='text-white'>
-          Telp 087888
-        </Link>
+        <a href="tel:+6287888798183" className='text-white'>087888798183</a>
         <div className='grid place-content-end text-white'>ID</div>
       </div>
 
@@ -17,6 +15,7 @@ const Navbar = () => {
           <Link href='/' className='text-black text-2xl mr-4'>
             <img src="/welding-mask.png" className='w-20' alt="Indri Teknik Las" />
           </Link>
+          <h1 className='text-xl mt-6 font-semibold'>Bengkel Las Dan Minimalis</h1>
           <div className='hidden relative'>
             <input
               type='text'
@@ -35,7 +34,12 @@ const Navbar = () => {
             <li>
               <HomeIcon />
             </li>
-            <li className='hover:underline'>Beranda</li>
+            <li className='hover:underline'>
+              <Link href='/'>Beranda</Link>
+            </li>
+            <li className='hover:underline'>
+              <Link href='lokasi'>Lokasi</Link>
+            </li>
             <li className='hover:underline'>Layanan</li>
             <li className='hover:underline'>Tentang</li>
             <li className='hover:underline'>Kontak</li>
