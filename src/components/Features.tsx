@@ -3,13 +3,13 @@ import { features } from '../constant/features.js'
 
 const Features = () => {
   return (
-    <section className=''>
+    <section >
     <div className='features mx-6 md:mt-24 mb-6'>
-      <h1 className='text-center text-xl font-bold mb-6'>Layanan Untuk Kenyamanan Anda</h1>
+      <h2 className='text-center text-xl font-bold mb-6'>Layanan Untuk Kenyamanan Anda</h2>
     <div className='text-center'>
       <div className='md:flex justify-center items-center gap-6'>
         {features.map(feature => (
-        <div className='flex flex-col space-y-1 bg-[#f5f5f5] border p-3 my-3 md:w-1/3 h-52 rounded-md'>
+        <article className='flex flex-col space-y-1 bg-[#f5f5f5] border p-3 my-3 md:w-1/3 h-52 rounded-md'>
         <Image
           src={feature.img}
           alt='camp'
@@ -17,11 +17,11 @@ const Features = () => {
           height={42}
           className='mx-auto'
         />
-        <h2 className='font-semibold'>{feature.title}</h2>
+        <h3 className='font-semibold'>{feature.title}</h3>
         <p className='text-md'>
           {feature.description}
         </p>
-      </div>
+      </article>
         ))}
       </div>
     </div>

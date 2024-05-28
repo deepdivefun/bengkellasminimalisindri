@@ -30,7 +30,7 @@ export default function RootLayout({
         <GoogleAnalytics/>
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

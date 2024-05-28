@@ -1,21 +1,26 @@
 import Link from 'next/link';
 import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
+import CallIcon from '@mui/icons-material/Call';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const Navbar = () => {
   return (
-    <nav>
+    <header>
       <div className='flexBetween padding-container item-center relative z-30 py-2 bg-zinc-800 text-sm'>
-        <a href="tel:+6287888798183" className='text-white'>087888798183</a>
+        <div className='flex gap-6'>
+          <a href="tel:+6287888798183" className='text-white'>087888798183 <CallIcon style={{ color:'white' }} /> </a>
+          <a href="https://wa.me/6287888798183" className='text-white'>WhatsApp <WhatsAppIcon style={{ color:'white' }} /> </a>
+        </div>
         <div className='grid place-content-end text-white'>ID</div>
       </div>
 
-      <div className='flexBetween max-container padding-container relative z-30 py-3 bg-white'>
+      <nav className='md:flexBetween max-container padding-container relative z-30 py-3 bg-white'>
         <div className='flex'>
           <Link href='/' className='text-black text-2xl mr-4'>
             <img src="/welding-mask.png" className='w-20' alt="Indri Teknik Las" />
           </Link>
-          <h1 className='text-xl mt-6 font-semibold'>Bengkel Las Dan Minimalis</h1>
+          <h1 className='text-xl mt-6 font-semibold'>Indri Teknik Las</h1>
           <div className='hidden relative'>
             <input
               type='text'
@@ -29,8 +34,8 @@ const Navbar = () => {
             </span>
           </div>
         </div>
-        <div className='text-black hidden md:block'>
-          <ul className='flex gap-5 items-center  cursor-pointer'>
+        <div className='text-black'>
+          <ul className='flex md:gap-5 gap-3 items-center  cursor-pointer'>
             <li>
               <HomeIcon />
             </li>
@@ -38,15 +43,16 @@ const Navbar = () => {
               <Link href='/'>Beranda</Link>
             </li>
             <li className='hover:underline'>
-              <Link href='lokasi'>Lokasi</Link>
+              <Link href='/lokasi'>Lokasi</Link>
             </li>
-            <li className='hover:underline'>Layanan</li>
-            <li className='hover:underline'>Tentang</li>
-            <li className='hover:underline'>Kontak</li>
+            {/* <li className='hover:underline'>Layanan</li> */}
+            {/* <li className='hover:underline'><Link href='#jasa-kami'>Jasa Kami</Link></li> */}
+            {/* <li className='hover:underline'>Tentang</li> */}
+            {/* <li className='hover:underline'>Kontak</li> */}
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 

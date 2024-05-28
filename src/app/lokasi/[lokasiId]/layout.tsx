@@ -9,8 +9,8 @@ export default function LokasiDetailLayout({
   //   throw new Error("Error loading product details");
   // }
   return (
-    <>
+    <main>
       {children}
-    </>
+    </main>
   );
 }

@@ -27,8 +27,8 @@ export default function LokasiPage() {
             additionalInfo: false,
         },
         {
-            name: 'Cilengsi',
-            href: 'lokasi/bengkel-las-cilengsi',
+            name: 'Cileungsi',
+            href: 'lokasi/bengkel-las-cileungsi',
             lat: -6.425758,
             lng: 106.959122,
             additionalInfo: false,
