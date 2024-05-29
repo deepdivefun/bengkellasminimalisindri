@@ -9,8 +9,8 @@ const Navbar = () => {
     <header>
       <div className='flexBetween padding-container item-center relative z-30 py-2 bg-zinc-800 text-sm'>
         <div className='flex gap-6'>
-          <a href="tel:+6287888798183" className='text-white'>087888798183 <CallIcon style={{ color:'white' }} /> </a>
-          <a href="https://wa.me/6287888798183" className='text-white'>WhatsApp <WhatsAppIcon style={{ color:'white' }} /> </a>
+          <a href="tel:+6281283993386" className='text-white'>081283993386 <CallIcon style={{ color:'white' }} /> </a>
+          <a href="https://wa.me/6281283993386" className='text-white'>WhatsApp <WhatsAppIcon style={{ color:'white' }} /> </a>
         </div>
         <div className='grid place-content-end text-white'>ID</div>
       </div>
