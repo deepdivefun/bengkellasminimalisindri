@@ -20,7 +20,7 @@ const Hero = () => {
                 Melayani pembuatan dan servis pagar, tangga, kanopi, pintu
                 minimalis, jendela minimalis, railing dor, dan lain lain
             </h2>
-            <button className='p-3 md:my-0 my-6 bg-green-600 text-white font-bold rounded-full bg-white border border-green-400 text-black'>
+            <button style={{backgroundColor: '#25d366'}} className='p-3 md:my-0 my-6 text-white font-bold rounded-full bg-white border border-green-400 text-black'>
               <WhatsAppIcon />
               <a href="https://wa.me/6287888798183" target="_blank" rel="noopener noreferrer">hubungi Whatsapp Kami</a>
             </button>
