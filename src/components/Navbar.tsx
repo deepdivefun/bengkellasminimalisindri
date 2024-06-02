@@ -3,6 +3,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
 import CallIcon from '@mui/icons-material/Call';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import {  Autocomplete,  AutocompleteSection,  AutocompleteItem} from "@nextui-org/autocomplete";
 
 const Navbar = () => {
   return (
@@ -34,7 +35,7 @@ const Navbar = () => {
             </span>
           </div>
         </div>
-        <div className='text-black'>
+        <div className='text-black my-3'>
           <ul className='flex md:gap-5 gap-3 items-center  cursor-pointer'>
             <li>
               <HomeIcon />
@@ -44,6 +45,13 @@ const Navbar = () => {
             </li>
             <li className='hover:underline'>
               <Link href='/lokasi'>Lokasi</Link>
+            </li>
+            <li>
+              <Autocomplete
+                label='Layanan'
+                >
+                
+              </Autocomplete>
             </li>
             {/* <li className='hover:underline'>Layanan</li> */}
             {/* <li className='hover:underline'><Link href='#jasa-kami'>Jasa Kami</Link></li> */}

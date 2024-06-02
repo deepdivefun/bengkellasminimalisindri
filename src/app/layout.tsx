@@ -4,12 +4,13 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
+import BubbleChat from '@/components/BubbleChat';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
-    default:"Bengkel Las Bekasi",
+    default:"Bengkel Las Bekasi Tukang Las Bekasi",
     template:"%s - Bengkel Las Dan Bengkel Las Minimalis",
   },
   description: 'Bengkel Las Bekasi Melayani pembuatan dan servis pagar, kanopi, pintu minimalis, jendela minimalis, railing dor',
@@ -18,6 +19,8 @@ export const metadata: Metadata = {
   }
   
 };
+
+
 
 export default function RootLayout({
   children,
@@ -29,10 +32,11 @@ export default function RootLayout({
       <head>
       <GoogleAnalytics/>
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} static`} >
         <Navbar />
         {children}
-        <Footer />
+        <Footer  />
+        <BubbleChat/>
       </body>
     </html>
   );

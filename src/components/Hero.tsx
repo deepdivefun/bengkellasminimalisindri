@@ -15,7 +15,7 @@ const Hero = () => {
             />
         </div>
         <div className='col-span-3'>
-          <h1 className='text-2xl font-bold my-3 md:my-0'>Bengkel Las dan Bengkel Las Minimalis</h1>
+          <h1 className='md:text-2xl text-xl font-bold my-3 md:my-0'>Bengkel Las dan Bengkel Las Minimalis</h1>
             <h2 className='text-xl md:my-6'>
                 Melayani pembuatan dan servis pagar, tangga, kanopi, pintu
                 minimalis, jendela minimalis, railing dor, dan lain lain
