@@ -7,7 +7,7 @@ const Contact = () => {
         <section className='bg-zinc-950 text-white md:p-12 p-1'>
         <div className='mx-6 my-12'>
             <div className='md:flex gap-6'>
-                <span className='text-xl border rounded-full p-2'>Tentang Kami</span>
+                <span className='text-xl border rounded-full p-2'>Tentang Kamiii</span>
                 <h1 className='text-4xl font-bold mt-3'>Indri Teknik Las</h1>
             </div>
             <h2 className='font-semibold md:my-6 my-6'>Bengkel Las Melayani Pembuatan Kanopi, Pagar, Tangga, Jendela dan Minimalis</h2>
