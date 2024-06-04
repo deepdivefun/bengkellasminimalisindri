@@ -1,5 +1,3 @@
-'use client'
-
 import {GraphQLResponse, SearchResults} from '@/lib/types'
 
 /**

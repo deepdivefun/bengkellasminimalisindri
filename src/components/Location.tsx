@@ -1,5 +1,3 @@
-"use client"
-
 import React from 'react'
 import { Map  }from './Map'
 import Link from "next/link";

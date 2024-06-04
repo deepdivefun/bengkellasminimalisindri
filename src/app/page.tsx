@@ -1,5 +1,3 @@
-'use client'
-
 import Features from '@/components/Features';
 import Hero from '@/components/Hero';
 import Contact from '@/components/Contact';
@@ -11,22 +9,6 @@ import {notFound} from 'next/navigation'
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 
 export default async function Home() {
-
-
-  
-  const slideLeft = () => {
-    let slider: HTMLElement | null = document.getElementById("slider");
-    if (slider) {
-        slider.scrollLeft -= 235;
-    }
-};
-
-const slideRight = () => {
-    let slider: HTMLElement | null = document.getElementById("slider");
-    if (slider) {
-        slider.scrollLeft += 235;
-    }
-};
 
     // Fetch posts from WordPress.
     const posts = await getAllPosts()
@@ -42,23 +24,12 @@ const slideRight = () => {
       <Features />
       <aside>
       <section id="jasa-kami" className="mx-6 md:my-24 my-6">
-        <div className="container flex justify-between">
-            <h2 className="text-xl font-bold">Jasa Kami</h2>
-            <div className="gap-3 flex">
-              <button className="border rounded-md p-4 text-xl" title="scroll left" onClick={slideLeft}>
-                <AiOutlineArrowLeft />
-              </button>
-              <button className="border rounded-md p-4 text-xl" title="scroll right" onClick={slideRight}>
-                <AiOutlineArrowRight />
-              </button>
-            </div>
-        </div>
       <div className="mt-3">
           <div className="row-container md:flex gap-12" id="slider">
             {posts.map((post) => (
               <article key={post.databaseId} className="row-item">
                 <Link href={`/`} className="link border rounded-md p-3">
-                  <div className="item-header w-72">
+                  <div className="item-header w-52">
                   <Image
                       alt={post.featuredImage.node.altText}
                       height={post.featuredImage.node.mediaDetails.height}
@@ -77,6 +48,7 @@ const slideRight = () => {
       </div>
     </section>
     </aside>
+      {/* <Products /> */}
       <Contact />
       <BubbleChat />
     </main>

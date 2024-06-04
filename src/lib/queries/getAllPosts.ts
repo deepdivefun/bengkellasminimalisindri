@@ -1,5 +1,3 @@
-
-'use client'
 import {fetchGraphQL} from '@/lib/functions'
 import {Post} from '@/lib/types'
 
