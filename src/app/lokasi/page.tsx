@@ -1,3 +1,5 @@
+'use client'
+
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import type { Metadata } from 'next';
 import { Map } from '@/components/Map';

@@ -23,13 +23,14 @@ export default async function Home() {
       <Hero />
       <Features />
       <aside>
-      <section id="jasa-kami" className="mx-6 md:my-24 my-6">
-      <div className="mt-3">
-          <div className="row-container md:flex gap-12" id="slider">
+      <section id="jasa-kami" className="mx-6 md:my-12 my-6">
+      <div>
+        <h2 className='my-6 font-semibold text-xl'>Jasa Kami</h2>
+          <div className="md:flex md:gap-12 gap-6 w-full md:overflow-x-auto" id="slider">
             {posts.map((post) => (
-              <article key={post.databaseId} className="row-item">
-                <Link href={`/`} className="link border rounded-md p-3">
-                  <div className="item-header w-52">
+              <article key={post.databaseId} className="">
+                <Link href={`/`} className="">
+                  <div className="w-52">
                   <Image
                       alt={post.featuredImage.node.altText}
                       height={post.featuredImage.node.mediaDetails.height}
@@ -40,7 +41,7 @@ export default async function Home() {
                       style={{objectFit: "contain"}}
                     />
                   </div>
-                    <h3>{post.title}</h3>
+                    <h3 className='text-center mt-5'>{post.title}</h3>
                 </Link>
               </article>
             ))}

@@ -1,4 +1,3 @@
-import Products from "@/components/Products";
 import Features from "@/components/Features";
 import { Metadata } from "next";
 
@@ -33,7 +32,6 @@ export default function LokasiDetail({
         <section className="md:mx-16 mx-6 mt-6">
             <h1 className="uppercase font-bold">Bengkel Las {location}</h1>
             <h2 className="mt-6">Melayani pembuatan dan servis pagar, tangga, kanopi, pintu minimalis, jendela minimalis, railing dor, dan lain lain</h2>
-            <Products/>
             <Features/>
         </section>
     );

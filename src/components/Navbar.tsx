@@ -18,9 +18,6 @@ const Navbar = () => {
 
       <nav className='md:flexBetween max-container padding-container relative z-30 py-3 bg-white'>
         <div className='flex'>
-          <Link href='/' className='text-black text-2xl mr-4'>
-            <img src="/welding-mask.png" className='w-20' alt="Indri Teknik Las" />
-          </Link>
           <h1 className='text-xl mt-6 font-semibold'>Indri Teknik Las</h1>
           <div className='hidden relative'>
             <input
@@ -45,9 +42,6 @@ const Navbar = () => {
             </li>
             <li className='hover:underline'>
               <Link href='/lokasi'>Lokasi</Link>
-            </li>
-            <li className='hover:underline'>
-              <Link href='/posts'>Lokasi</Link>
             </li>
             <li>
               {/* <Autocomplete

@@ -4,7 +4,7 @@ import { features } from '../constant/features.js'
 const Features = () => {
   return (
     <section >
-    <div className='features mx-6 md:mt-24 mb-6'>
+    <div className='features mx-6 md:mt-12 mb-6'>
       <h2 className='text-center text-xl font-bold mb-6'>Layanan Untuk Kenyamanan Anda</h2>
     <div className='text-center'>
       <div className='md:flex justify-center items-center gap-6'>

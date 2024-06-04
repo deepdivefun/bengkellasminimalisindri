@@ -4,7 +4,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 const Hero = () => {
   return (
     <section>
-      <div className='md:grid grid-cols-6 gap-6 mx-6 pb-3'>
+      <div className='md:grid grid-cols-6 gap-6 mx-6 pb-12'>
         <div className='col-span-3'>
           <img
               src='/hero_img.jpg'
