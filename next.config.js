@@ -5,6 +5,15 @@ const nextConfig = {
     sassOptions: {
         includePaths: [path.join(__dirname, 'style')],
       },
+      images: {
+        remotePatterns: [
+          {
+            protocol: 'http',
+            hostname: 'wp.bengkellasminimalisindri.com',
+            port: '',
+          },
+        ],
+      },
 }
 
 module.exports = nextConfig

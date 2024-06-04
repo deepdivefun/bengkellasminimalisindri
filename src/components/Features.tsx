@@ -9,7 +9,7 @@ const Features = () => {
     <div className='text-center'>
       <div className='md:flex justify-center items-center gap-6'>
         {features.map(feature => (
-        <article className='flex flex-col space-y-1 bg-[#f5f5f5] border p-3 my-3 md:w-1/3 h-52 rounded-md'>
+        <article key={feature.id} className='flex flex-col space-y-1 bg-[#f5f5f5] border p-3 my-3 md:w-1/3 h-52 rounded-md'>
         <Image
           src={feature.img}
           alt='camp'

@@ -46,12 +46,15 @@ const Navbar = () => {
             <li className='hover:underline'>
               <Link href='/lokasi'>Lokasi</Link>
             </li>
+            <li className='hover:underline'>
+              <Link href='/posts'>Lokasi</Link>
+            </li>
             <li>
-              <Autocomplete
+              {/* <Autocomplete
                 label='Layanan'
                 >
                 
-              </Autocomplete>
+              </Autocomplete> */}
             </li>
             {/* <li className='hover:underline'>Layanan</li> */}
             {/* <li className='hover:underline'><Link href='#jasa-kami'>Jasa Kami</Link></li> */}
