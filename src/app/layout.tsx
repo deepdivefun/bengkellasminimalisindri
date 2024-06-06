@@ -10,8 +10,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
-    default:"Bengkel Las Bekasi Tukang Las Bekasi",
-    template:"%s - Bengkel Las Dan Bengkel Las Minimalis",
+    default:"Bengkel Las Bekasi",
+    template:"%s - Bengkel Las Terpercaya Dan Berpengalaman",
   },
   description: 'Bengkel Las Bekasi Melayani pembuatan dan servis pagar, kanopi, pintu minimalis, jendela minimalis, railing dor',
   twitter : {

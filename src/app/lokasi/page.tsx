@@ -5,7 +5,8 @@ import type { Metadata } from 'next';
 import { Map } from '@/components/Map';
 import Link from 'next/link';
 
-export default function LokasiPage() {
+export default async function LokasiPage() {
+
     const locations = [
         {
             name: 'Bengkel Las Jakarta',

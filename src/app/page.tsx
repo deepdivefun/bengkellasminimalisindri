@@ -6,7 +6,6 @@ import getAllPosts from '@/lib/queries/getAllPosts'
 import Image from 'next/image'
 import Link from 'next/link'
 import {notFound} from 'next/navigation'
-import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 
 export default async function Home() {
 

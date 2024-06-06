@@ -8,7 +8,7 @@ import {  Autocomplete,  AutocompleteSection,  AutocompleteItem} from "@nextui-o
 const Navbar = () => {
   return (
     <header>
-      <div className='flexBetween padding-container item-center relative z-30 py-2 bg-zinc-800 text-sm'>
+      <div className='flexBetween padding-container text-[12px] item-center relative z-30 py-2 bg-zinc-800 text-sm'>
         <div className='flex gap-6'>
           <a href="tel:+6281283993386" className='text-white'>081283993386 <CallIcon style={{ color:'white' }} /> </a>
           <a href="https://wa.me/6281283993386" className='text-white'>WhatsApp <WhatsAppIcon style={{ color:'white' }} /> </a>
@@ -16,9 +16,9 @@ const Navbar = () => {
         <div className='grid place-content-end text-white'>ID</div>
       </div>
 
-      <nav className='md:flexBetween max-container padding-container relative z-30 py-3 bg-white'>
+      <nav className='md:flexBetween max-container padding-container py-1 relative z-30 bg-white'>
         <div className='flex'>
-          <h1 className='text-xl mt-6 font-semibold'>Indri Teknik Las</h1>
+          <h1 className='text-xl font-semibold'>Indri Teknik Las</h1>
           <div className='hidden relative'>
             <input
               type='text'
@@ -43,6 +43,9 @@ const Navbar = () => {
             <li className='hover:underline'>
               <Link href='/lokasi'>Lokasi</Link>
             </li>
+            {/* <li className='hover:underline'>
+              <Link href='/layanan'>Layanan Jasa</Link>
+            </li> */}
             <li>
               {/* <Autocomplete
                 label='Layanan'
