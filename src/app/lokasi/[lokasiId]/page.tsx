@@ -17,9 +17,14 @@ export async function generateMetadata({ params }: { params: { lokasiId: string 
     return {
         title: `Bengkel Las ${location}`,
         description: `Layanan pembuatan dan servis pagar, tangga, kanopi, pintu minimalis, jendela minimalis, railing dor, dan lain-lain di ${location}.`,
-        twitter: {
-            card: "summary_large_image",
-        },
+        openGraph :{
+          title:"Bengkel Las Bekasi",
+          description: "Bengkel Las Bekasi Melayani pembuatan dan servis pagar, kanopi, pintu, jendela minimalis, railing dor, balkon, tangga, tralis",
+          type:"website",
+          locale:"id",
+          url:"https://bengkellasminimalisindri.com/",
+          siteName:"bengkellasminimalisindri"
+        }
     };
 }
 
