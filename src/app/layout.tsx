@@ -13,9 +13,14 @@ export const metadata: Metadata = {
     default:"Bengkel Las Bekasi",
     template:"%s - Bengkel Las Terpercaya Dan Berpengalaman",
   },
-  description: 'Bengkel Las Bekasi Melayani pembuatan dan servis pagar, kanopi, pintu minimalis, jendela minimalis, railing dor',
-  twitter : {
-    card :"summary_large_image"
+  description: 'Bengkel Las Bekasi Melayani pembuatan dan servis pagar, kanopi, pintu, jendela minimalis, railing dor, balkon, tangga, tralis',
+  openGraph :{
+    title:"Bengkel Las Bekasi",
+    description: "Bengkel Las Bekasi Melayani pembuatan dan servis pagar, kanopi, pintu, jendela minimalis, railing dor, balkon, tangga, tralis",
+    type:"website",
+    locale:"id",
+    url:"https://bengkellasminimalisindri.com/",
+    siteName:"bengkellasminimalisindri"
   }
   
 };

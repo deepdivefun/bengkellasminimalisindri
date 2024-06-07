@@ -1,11 +1,10 @@
 'use client'
 
 import GoogleAnalytics from '@/components/GoogleAnalytics';
-import type { Metadata } from 'next';
 import { Map } from '@/components/Map';
 import Link from 'next/link';
 
-export default async function LokasiPage() {
+export default function LokasiPage() {
 
     const locations = [
         {

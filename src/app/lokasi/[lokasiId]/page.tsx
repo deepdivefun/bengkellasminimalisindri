@@ -5,14 +5,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {notFound} from 'next/navigation'
 
-// Fungsi untuk memisahkan lokasi dari params
 function extractLocation(lokasiId: string): string {
     // Memisahkan berdasarkan tanda hubung dan mengambil bagian terakhir
     const parts = lokasiId.split('-');
     return parts[parts.length - 1];
 }
 
-// Fungsi untuk menghasilkan metadata dinamis
 export async function generateMetadata({ params }: { params: { lokasiId: string } }): Promise<Metadata> {
     const location = extractLocation(params.lokasiId);
 
