@@ -3,51 +3,15 @@
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { Map } from '@/components/Map';
 import Link from 'next/link';
+import { locations } from '../../constant/location'
 
 export default function LokasiPage() {
 
-    const locations = [
-        {
-            name: 'Bengkel Las Jakarta',
-            href: 'lokasi/bengkel-las-jakarta',
-            lat: -6.224221,
-            lng: 106.884750,
-            additionalInfo: true,
-        },
-        {
-            name: 'Cikarang',
-            href: 'lokasi/bengkel-las-cikarang',
-            lat: -6.295170,
-            lng: 107.079179,
-            additionalInfo: false,
-        },
-        {
-            name: 'Cibubur',
-            href: 'lokasi/bengkel-las-cibubur',
-            lat: -6.364800,
-            lng: 106.892929,
-            additionalInfo: false,
-        },
-        {
-            name: 'Cileungsi',
-            href: 'lokasi/bengkel-las-cileungsi',
-            lat: -6.425758,
-            lng: 106.959122,
-            additionalInfo: false,
-        },
-        {
-            name: 'Bekasi',
-            href: 'lokasi/bengkel-las-bekasi',
-            lat: -6.261894,
-            lng: 106.977853,
-            additionalInfo: false,
-        },
-    ];
-
     return (
-        <>
+        <section>
             <GoogleAnalytics />
             <div className='padding-container my-6'>
+                
                 <h1 className='text-2xl font-bold mb-6'>Layanan Lokasi Kami</h1>
                 <ul className='md:grid grid-cols-3 gap-8 mb-6'>
                     {locations.map((location, index) => (
@@ -68,6 +32,6 @@ export default function LokasiPage() {
                     ))}
                 </ul>
             </div>
-        </>
+        </section>
     );
 }

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
 import CallIcon from '@mui/icons-material/Call';
+import Image from 'next/image';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import {  Autocomplete,  AutocompleteSection,  AutocompleteItem} from "@nextui-org/autocomplete";
 
@@ -16,14 +17,14 @@ const Navbar = () => {
         <div className='grid place-content-end text-white'>ID</div>
       </div>
 
-      <nav className='md:flexBetween max-container padding-container py-1 relative z-30 bg-white'>
+      <nav className='md:flexBetween max-container padding-container relative py-3 z-30 bg-white'>
         <div className='flex'>
-          <h1 className='text-xl font-semibold'>Indri Teknik Las</h1>
+         <Image width={200} height={120} src="/logo_indri.png" alt="logo_indri" />
           <div className='hidden relative'>
             <input
               type='text'
               placeholder='Temukan kebutuah anda'
-              className='border border-gray-300 rounded-full px-3 py-2 md:w-fit static text-sm'
+              className='border border-gray-300 rounded-full px-3 md:w-fit static text-sm'
             />
             <span className='absolute inset-y-0 right-0 flex items-center pr-3'>
               <button className='bg-orange-300 rounded-full p-1'>
