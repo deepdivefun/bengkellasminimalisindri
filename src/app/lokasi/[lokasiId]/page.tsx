@@ -23,8 +23,9 @@ export async function generateMetadata({ params }: { params: { lokasiId: string 
           type:"website",
           locale:"id",
           url:"https://bengkellasminimalisindri.com/",
-          siteName:"bengkellasminimalisindri"
-        }
+          siteName:"bengkellasminimalisindri",
+        },
+        metadataBase: new URL(`https://bengkellasminimalisindri.com`),
     };
 }
 
