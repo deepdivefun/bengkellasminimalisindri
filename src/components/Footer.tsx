@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <>
+    <footer>
       <div className='px-6 static'>
         <div className='md:grid grid-cols-6'> 
           <div className='col-span-6 text-center'>
@@ -14,7 +14,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </>
+    </footer>
   )
 }
 

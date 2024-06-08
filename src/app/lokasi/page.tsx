@@ -8,6 +8,7 @@ import { locations } from '../../constant/location'
 export default function LokasiPage() {
 
     return (
+        <main>
         <section>
             <GoogleAnalytics />
             <div className='padding-container my-6'>
@@ -33,5 +34,6 @@ export default function LokasiPage() {
                 </ul>
             </div>
         </section>
+        </main>
     );
 }

@@ -18,7 +18,7 @@ export default async function Home() {
     }
 
   return (
-    <main className='relative'>
+    <main>
       <Hero />
       <Features />
       <aside>

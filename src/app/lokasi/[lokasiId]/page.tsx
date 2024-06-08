@@ -49,6 +49,7 @@ export default async function LokasiDetail({
     }
 
     return (
+      <>
         <section className="md:mx-16 mx-6">
             <div>
                 {/* <h1 className="uppercase font-bold">Bengkel Las {location.name}</h1> */}
@@ -70,7 +71,9 @@ export default async function LokasiDetail({
                 </ul>
             </div>
 
-            <aside>
+          
+        </section>
+        <aside>
                 <section id="jasa-kami" className="mx-6 md:my-12 my-6">
                     <div>
                         <div className="md:flex md:gap-12 gap-6 w-full md:overflow-x-auto" id="slider">
@@ -95,8 +98,7 @@ export default async function LokasiDetail({
                     </div>
                 </section>
             </aside>
-
-            <Features />
-        </section>
+        <Features />
+        </>
     );
 }
