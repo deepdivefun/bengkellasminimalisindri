@@ -1,8 +1,13 @@
+import EngineeringIcon from '@mui/icons-material/Engineering';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+import LocalOfferIcon from '@mui/icons-material/LocalOffer';
+
 export const features = [
-    { id: 1, title: 'Konsultasi', description: 'Tanyakan kepada kami kebutuhan dan masalah Anda secara gratis', img:'/call-center.png' },
-    { id: 2, title: 'Survey', description: 'Sebelum Anda memulai, lakukan survei dengan kami untuk memastikan rencana yang tepat sesuai dengan kebutuhan Anda', img:'/form.png' },
-    { id: 3, title: 'Harga Sesuai Kebutuhan', description: 'Kami menawarkan harga yang disesuaikan dengan kebutuhan Anda, memberikan solusi yang efektif dan terjangkau', img:'/discount-tag.png' },
-    { id: 4, title: 'Maintenance', description: 'Layanan perawatan yang andal dan berkualitas, menjaga aset Anda dalam kondisi optimal sepanjang waktu', img:'/discount-tag.png' }
+    { id: 1, title: 'Konsultasi & Survey', description: 'Tanyakan kepada kami kebutuhan dan masalah Anda secara gratis', img:<WhatsAppIcon style={{ fontSize:'46px', margin:'auto' }} /> },
+    { id: 2, title: 'Tenaga Ahli', description: 'Tim kami terdiri dari tenaga ahli yang berpengalaman dalam bidang las dan selalu siap memberikan solusi terbaik untuk kebutuhan Anda', img:<EngineeringIcon style={{ fontSize:'46px', margin:'auto' }} />  },
+    { id: 3, title: 'Pelayanan Cepat dan Profesional', description: 'Kami mengutamakan kepuasan pelanggan dengan memberikan pelayanan yang cepat, tepat waktu, dan profesional', img:<SupportAgentIcon style={{ fontSize:'46px', margin:'auto' }} /> },
+    { id: 4, title: 'Harga Bersaing', description: 'Kami menawarkan harga yang kompetitif dengan tetap menjaga kualitas terbaik pada setiap pekerjaan yang kami lakukan.', img:<LocalOfferIcon style={{ fontSize:'46px', margin:'auto' }} />  }
 ];
 
 export const jasaKami = [

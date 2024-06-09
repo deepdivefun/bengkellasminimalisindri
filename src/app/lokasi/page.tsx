@@ -4,6 +4,7 @@ import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { Map } from '@/components/Map';
 import Link from 'next/link';
 import { locations } from '../../constant/location'
+import BubbleChat from '@/components/BubbleChat';
 
 export default function LokasiPage() {
 
@@ -34,6 +35,8 @@ export default function LokasiPage() {
                 </ul>
             </div>
         </section>
+        
+      <BubbleChat />
         </main>
     );
 }

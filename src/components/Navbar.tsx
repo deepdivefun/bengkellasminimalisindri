@@ -17,9 +17,10 @@ const Navbar = () => {
         <div className='grid place-content-end text-white'>ID</div>
       </div>
 
-      <nav className='md:flexBetween max-container padding-container relative py-3 z-30 bg-white'>
+      <nav className='md:flexBetween max-container padding-container relative my-3 z-30 bg-white'>
         <div className='flex'>
-         <Image width={200} height={120} src="/logo_indri.png" alt="logo_indri" />
+         <Image width={96} height={96} src="/logo_indri3.png" alt="logo_indri" />
+         <h3 className='font-bold ml-1 content-center text-xl'>INDRI TEKNIK LAS</h3>
           <div className='hidden relative'>
             <input
               type='text'
@@ -44,20 +45,6 @@ const Navbar = () => {
             <li className='hover:underline'>
               <Link href='/lokasi'>Lokasi</Link>
             </li>
-            {/* <li className='hover:underline'>
-              <Link href='/layanan'>Layanan Jasa</Link>
-            </li> */}
-            <li>
-              {/* <Autocomplete
-                label='Layanan'
-                >
-                
-              </Autocomplete> */}
-            </li>
-            {/* <li className='hover:underline'>Layanan</li> */}
-            {/* <li className='hover:underline'><Link href='#jasa-kami'>Jasa Kami</Link></li> */}
-            {/* <li className='hover:underline'>Tentang</li> */}
-            {/* <li className='hover:underline'>Kontak</li> */}
           </ul>
         </div>
       </nav>

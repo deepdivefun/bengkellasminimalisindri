@@ -16,7 +16,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             lastModified: new Date(),
         },
         {
-            url: `${process.env.NEXT_PUBLIC_BASE_URL}/lokasi/bengkel-las-cileungsi`,
+            url: `${process.env.NEXT_PUBLIC_BASE_URL}/lokasi/bengkel-las-bogor`,
             lastModified: new Date(),
         },
         {

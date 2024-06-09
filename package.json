@@ -15,6 +15,7 @@
     "@mui/icons-material": "^5.15.2",
     "@mui/material": "^5.15.2",
     "@nextui-org/autocomplete": "^2.1.1",
+    "@nextui-org/card": "^2.0.30",
     "next": "^14.2.3",
     "react": "^18",
     "react-dom": "^18",

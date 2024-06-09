@@ -1,3 +1,5 @@
+import BubbleChat from "@/components/BubbleChat";
+
 export default function LokasiDetailLayout({
   children,
 }: {
@@ -6,6 +8,7 @@ export default function LokasiDetailLayout({
   return (
     <main>
       {children}
+      <BubbleChat/>
     </main>
   );
 }
