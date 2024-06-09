@@ -14,7 +14,7 @@ export default function LokasiPage() {
             <GoogleAnalytics />
             <div className='padding-container my-6'>
                 
-                <h1 className='text-2xl font-bold mb-6'>Layanan Lokasi Kami</h1>
+                <h1 className='text-xl font-medium mb-2'>Layanan Lokasi Kami</h1>
                 <ul className='md:grid grid-cols-3 gap-8 mb-6'>
                     {locations.map((location, index) => (
                         <li key={index}>

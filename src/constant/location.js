@@ -18,7 +18,7 @@ export const locations = [
         lat: -6.295170,
         lng: 107.079179,
         additionalInfo: false,
-        subtitle:'Jasa Las Profesional untuk Wilayah Jakarta Cikarang',
+        subtitle:'Jasa Las Profesional untuk Wilayah Cikarang',
         description:'Bengkel Las Cikarang siap melayani berbagai kebutuhan las Anda di seluruh wilayah Cikarang, termasuk Cikarang Utara, Cikarang Selatan, Cikarang Timur, Cikarang Barat, Cikarang Pusat, serta sekitarnya seperti Lemahabang, Tambun, Setu, Serang Baru, Kedungwaringin, Jababeka, dan Lippo Cikarang.',
         img:"/3.png"
     },

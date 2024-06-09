@@ -9,18 +9,17 @@ import {  Autocomplete,  AutocompleteSection,  AutocompleteItem} from "@nextui-o
 const Navbar = () => {
   return (
     <header>
-      <div className='flexBetween padding-container text-[12px] item-center relative z-30 py-2 bg-zinc-800 text-sm'>
+      <div className='flexBetween md:px-10 px-5 text-[12px] item-center relative z-30 py-2 bg-black text-sm'>
         <div className='flex gap-6'>
-          <a href="tel:+6281283993386" className='text-white'>081283993386 <CallIcon style={{ color:'white' }} /> </a>
-          <a href="https://wa.me/6281283993386" className='text-white'>WhatsApp <WhatsAppIcon style={{ color:'white' }} /> </a>
+          <a href="tel:+6282249740340" className='text-white'>0822 4974 0340 <CallIcon style={{ color:'white' }} /> </a>
+          <a href="https://wa.me/6282249740340" className='text-white'>WhatsApp <WhatsAppIcon style={{ color:'white' }} /> </a>
         </div>
         <div className='grid place-content-end text-white'>ID</div>
       </div>
 
-      <nav className='md:flexBetween max-container padding-container relative my-3 z-30 bg-white'>
+      <nav className='md:flexBetween my-3 md:mx-10 mx-5 relative z-30 bg-white'>
         <div className='flex'>
-         <Image width={96} height={96} src="/logo_indri3.png" alt="logo_indri" />
-         <h3 className='font-bold ml-1 content-center text-xl'>INDRI TEKNIK LAS</h3>
+         <h3 className='font-bold ml-1 content-center text-xl'>Indri Teknik Las</h3>
           <div className='hidden relative'>
             <input
               type='text'
@@ -34,7 +33,7 @@ const Navbar = () => {
             </span>
           </div>
         </div>
-        <div className='text-black my-3'>
+        <div className='text-black md:mt-0 mt-2'>
           <ul className='flex md:gap-5 gap-3 items-center  cursor-pointer'>
             <li>
               <HomeIcon />

@@ -25,7 +25,7 @@ const slideRight = () => {
   return (
     <section id="jasa-kami" className="mx-6 md:my-24 my-6">
         <div className="container flex justify-between">
-            <h2 className="text-xl font-bold">Jasa Kami</h2>
+            <h2 className="text-xl font-bold">Gallery</h2>
             <div className="gap-3 flex">
               <button className="border rounded-md p-4 text-xl" title="scroll left" onClick={slideLeft}>
                 <AiOutlineArrowLeft />

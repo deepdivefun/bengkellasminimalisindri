@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer>
-      <div className='px-6 static'>
+      <div className='px-6 static bg-black text-white py-3'>
         <div className='md:grid grid-cols-6'> 
           <div className='col-span-6 text-center'>
           <p>&copy; 2024 bengellasminimalisindri.com. Semua Hak Dilindungi.</p>

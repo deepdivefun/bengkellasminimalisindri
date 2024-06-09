@@ -3,9 +3,10 @@ import Hero from '@/components/Hero';
 import Contact from '@/components/Contact';
 import BubbleChat from '@/components/BubbleChat';
 import getAllPosts from '@/lib/queries/getAllPosts'
-import Image from 'next/image'
 import Link from 'next/link'
 import {notFound} from 'next/navigation'
+import React from "react";
+import {Card, CardFooter, Image, Button} from "@nextui-org/react";
 
 export default async function Home() {
 
@@ -22,27 +23,27 @@ export default async function Home() {
       <Hero />
       <Features />
       <aside>
-      <section id="jasa-kami" className="mx-6 md:my-12 my-6">
+      <section id="jasa-kami" className="mx-6">
       <div>
-        <h2 className='my-6 font-semibold text-xl'>Jasa Kami</h2>
-          <div className="md:flex md:gap-12 gap-6 w-full md:overflow-x-auto" id="slider">
+        <h2 className='mb-2 font-medium text-xl text-center'>Gallery</h2>
+          <div className="grid grid-cols-4 gap-4" id="slider">
             {posts.map((post) => (
-              <article key={post.databaseId} className="">
-                <Link href={`/`} className="">
-                  <div className="w-52">
-                  <Image
-                      alt={post.featuredImage.node.altText}
-                      height={post.featuredImage.node.mediaDetails.height}
-                      src={post.featuredImage.node.sourceUrl}
-                      width={post.featuredImage.node.mediaDetails.width}
-                      priority={true}
-                      sizes="100vw"
-                      style={{objectFit: "contain"}}
-                    />
-                  </div>
-                    <h3 className='text-center mt-5'>{post.title}</h3>
-                </Link>
-              </article>
+              <Card
+              isFooterBlurred
+              radius="lg"
+              className="border-none rounded-lg"
+            >
+              <Image
+                alt={post.featuredImage.node.altText}
+                className="object-cover"
+                height={200}
+                src={post.featuredImage.node.sourceUrl}
+                width={200}
+              />
+              <CardFooter className="before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10  backdrop-blur-sm bg-white/30 rounded-md">
+                <p className="text-black">{post.title}</p>
+              </CardFooter>
+            </Card>
             ))}
           </div>
       </div>
