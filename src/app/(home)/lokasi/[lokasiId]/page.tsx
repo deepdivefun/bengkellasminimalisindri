@@ -1,9 +1,8 @@
 import Features from '@/components/Features'
-import getAllPosts from '@/lib/queries/getAllPosts'
+// import getAllPosts from '@/lib/queries/getAllPosts'
 import CheckIcon from '@mui/icons-material/Check'
 import {Metadata} from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
 import {notFound} from 'next/navigation'
 import {locations} from '../../../../constant/location'
 
@@ -40,11 +39,11 @@ export default async function LokasiDetail({
 }: {
   params: {lokasiId: string}
 }) {
-  const posts = await getAllPosts()
+  // const posts = await getAllPosts()
 
-  if (!posts || !posts.length) {
-    notFound()
-  }
+  // if (!posts || !posts.length) {
+  //   notFound()
+  // }
 
   const locationName = extractLocation(params.lokasiId)
   const location = locations.find(
@@ -135,7 +134,7 @@ export default async function LokasiDetail({
               className="md:flex md:gap-6 gap-3 w-full md:overflow-x-auto"
               id="slider"
             >
-              {posts.map((post) => (
+              {/* {posts.map((post) => (
                 <article key={post.databaseId} className="md:my-0 my-3">
                   <Link href="#">
                     <div className="w-52">
@@ -151,7 +150,7 @@ export default async function LokasiDetail({
                     </div>
                   </Link>
                 </article>
-              ))}
+              ))} */}
             </div>
           </div>
         </section>

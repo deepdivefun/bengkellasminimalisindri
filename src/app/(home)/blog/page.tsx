@@ -1,15 +1,11 @@
-import getAllBlogPosts from '@/lib/queries/getAllBlogPosts'
-import {Post} from '@/lib/types'
-import Image from 'next/image'
-import Link from 'next/link'
-import {notFound} from 'next/navigation'
+// import getAllBlogPosts from '@/lib/queries/getAllBlogPosts'
 
 export default async function Blog() {
-  const posts = await getAllBlogPosts()
+  // const posts = await getAllBlogPosts()
 
-  if (!posts || !posts.length) {
-    notFound()
-  }
+  // if (!posts || !posts.length) {
+  //   notFound()
+  // }
 
   return (
     <main>
@@ -18,7 +14,7 @@ export default async function Blog() {
       </article>
       <aside>
         {/* <h2>Latest Posts</h2> */}
-        <div className="flex mx-12 flex-wrap gap-8">
+        {/* <div className="flex mx-12 flex-wrap gap-8">
           {posts.map((post: Post) => (
             <article className="w-72" key={post.databaseId}>
               <Image
@@ -47,7 +43,7 @@ export default async function Blog() {
               </Link>
             </article>
           ))}
-        </div>
+        </div> */}
       </aside>
     </main>
   )

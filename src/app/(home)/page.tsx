@@ -1,21 +1,17 @@
+import BubbleChat from '@/components/BubbleChat'
+import Contact from '@/components/Contact'
 import Features from '@/components/Features'
 import Hero from '@/components/Hero'
-import Contact from '@/components/Contact'
-import BubbleChat from '@/components/BubbleChat'
-import getAllPosts from '@/lib/queries/getAllPosts'
-import Link from 'next/link'
-import {notFound} from 'next/navigation'
-import React from 'react'
-import {Card, CardFooter, Image, Button} from '@nextui-org/react'
+// import getAllPosts from '@/lib/queries/getAllPosts'
 
 export default async function Home() {
   // Fetch posts from WordPress.
-  const posts = await getAllPosts()
+  // const posts = await getAllPosts()
 
   // No data? Bail...
-  if (!posts || !posts.length) {
-    notFound()
-  }
+  // if (!posts || !posts.length) {
+  //   notFound()
+  // }
 
   return (
     <main>
@@ -25,7 +21,7 @@ export default async function Home() {
         <section id="jasa-kami" className="mx-6">
           <div>
             <h2 className="mb-2 font-medium text-xl text-center">Gallery</h2>
-            <div className="grid grid-cols-4 gap-4" id="slider">
+            {/* <div className="grid grid-cols-4 gap-4" id="slider">
               {posts.map((post) => (
                 <Card
                   isFooterBlurred
@@ -44,7 +40,7 @@ export default async function Home() {
                   </CardFooter>
                 </Card>
               ))}
-            </div>
+            </div> */}
           </div>
         </section>
       </aside>

@@ -1,5 +1,4 @@
-import {fetchGraphQL} from '@/lib/functions'
-import {Page} from '@/lib/types'
+// import {fetchGraphQL} from '@/lib/functions'
 
 /**
  * Fetch a page by slug.
@@ -43,6 +42,6 @@ export default async function getPageBySlug(slug: string) {
     slug: slug
   }
 
-  const response = await fetchGraphQL(query, variables)
-  return response.data.page as Page
+  // const response = await fetchGraphQL(query, variables)
+  // return response.data.page as Page
 }

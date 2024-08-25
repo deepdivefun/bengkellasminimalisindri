@@ -1,5 +1,4 @@
-import {fetchGraphQL} from '@/lib/functions'
-import {Post} from '@/lib/types'
+// import {fetchGraphQL} from '@/lib/functions'
 
 /**
  * Fetch a single blog post by slug.
@@ -73,7 +72,7 @@ export default async function getPostBySlug(slug: string) {
     slug: slug
   }
 
-  const response = await fetchGraphQL(query, variables)
+  // const response = await fetchGraphQL(query, variables)
 
-  return response.data.post as Post
+  // return response.data.post as Post
 }

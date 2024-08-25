@@ -1,5 +1,4 @@
-import {fetchGraphQL} from '@/lib/functions'
-import {Menu} from '@/lib/types'
+// import {fetchGraphQL} from '@/lib/functions'
 
 /**
  * Fetch a menu by slug.
@@ -25,7 +24,7 @@ export default async function getMenuBySlug(slug: string) {
     slug: slug
   }
 
-  const response = await fetchGraphQL(query, variables)
+  // const response = await fetchGraphQL(query, variables)
 
-  return response.data.menu as Menu
+  // return response.data.menu as Menu
 }
