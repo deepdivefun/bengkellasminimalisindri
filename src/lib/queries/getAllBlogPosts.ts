@@ -7,7 +7,7 @@ import {Post} from '@/lib/types'
 export default async function getAllPosts() {
   const query = `
   query GetAllPosts {
-    posts(where: {status: PUBLISH, categoryName: "layanan"}) {
+    posts(where: {status: PUBLISH, categoryName: "lokasi"}) {
       nodes {
         commentCount
         databaseId

@@ -1,32 +1,32 @@
-import React from 'react';
+import React from 'react'
 
 interface Post {
-  id: string;
-  title: string;
+  id: string
+  title: string
 }
 
 interface Edge {
-  node: Post;
+  node: Post
 }
 
 interface PostsData {
   posts: {
-    edges: Edge[];
-  };
+    edges: Edge[]
+  }
 }
 
 interface Props {
-  loading: boolean;
-  data?: PostsData;
+  loading: boolean
+  data?: PostsData
 }
 
-const PostsComponent: React.FC<Props> = ({ loading, data }) => {
+const PostsComponent: React.FC<Props> = ({loading, data}) => {
   if (loading) {
-    return <p>Loading...</p>;
+    return <p>Loading...</p>
   }
 
   if (!data || !data.posts || data.posts.edges.length === 0) {
-    return <p>No posts found.</p>;
+    return <p>No posts found.</p>
   }
 
   return (
@@ -38,7 +38,7 @@ const PostsComponent: React.FC<Props> = ({ loading, data }) => {
         ))}
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default PostsComponent;
+export default PostsComponent

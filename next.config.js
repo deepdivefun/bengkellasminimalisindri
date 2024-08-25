@@ -2,16 +2,16 @@
 
 const nextConfig = {
   images: {
-    formats: ["image/avif", "image/webp"],
+    formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "wp.bengkellasminimalisindri.com",
-        port: "",
-        pathname: "/wp-content/uploads/**",
-      },
-    ],
-  },
+        protocol: 'https',
+        hostname: 'wp.bengkellasminimalisindri.com',
+        port: '',
+        pathname: '/wp-content/uploads/**'
+      }
+    ]
+  }
 }
 
 module.exports = nextConfig

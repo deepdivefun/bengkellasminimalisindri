@@ -1,0 +1,11 @@
+{
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.fontSize": 14,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "debug.console.fontSize": 14,
+  "screencastMode.fontSize": 56,
+  "terminal.integrated.fontSize": 11,
+  "chat.editor.fontSize": 11,
+  "editor.minimap.sectionHeaderFontSize": 14
+}
