@@ -46,7 +46,7 @@ const Navbar = () => {
               <Link href="/">Beranda</Link>
             </li>
             <li className="hover:underline">
-              <Link href="/lokasi">Lokasi</Link>
+              <Link href="/lokasi">Lokasi Kami</Link>
             </li>
           </ul>
         </div>

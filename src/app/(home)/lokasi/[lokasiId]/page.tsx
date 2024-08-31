@@ -1,5 +1,5 @@
 import Features from '@/components/Features'
-// import getAllPosts from '@/lib/queries/getAllPosts'
+import Products from '@/components/Products'
 import CheckIcon from '@mui/icons-material/Check'
 import {Metadata} from 'next'
 import Image from 'next/image'
@@ -80,9 +80,9 @@ export default async function LokasiDetail({
               height={1200}
               src={location.img}
               width={1200}
-              priority={true}
-              sizes="100vw"
-              style={{objectFit: 'contain'}}
+              // priority={true}
+              // sizes="100vw"
+              // style={{objectFit: 'contain'}}
             />
           </div>
         </section>
@@ -129,6 +129,7 @@ export default async function LokasiDetail({
       <aside>
         <section id="jasa-kami" className="mx-6 md:my-6 my-6">
           <h2 className="text-xl font-semibold">Foto</h2>
+          <Products />
           <div>
             <div
               className="md:flex md:gap-6 gap-3 w-full md:overflow-x-auto"

@@ -2,6 +2,7 @@ import BubbleChat from '@/components/BubbleChat'
 import Contact from '@/components/Contact'
 import Features from '@/components/Features'
 import Hero from '@/components/Hero'
+import Products from '@/components/Products'
 // import getAllPosts from '@/lib/queries/getAllPosts'
 
 export default async function Home() {
@@ -44,7 +45,7 @@ export default async function Home() {
           </div>
         </section>
       </aside>
-      {/* <Products /> */}
+      <Products />
       <Contact />
       <BubbleChat />
     </main>

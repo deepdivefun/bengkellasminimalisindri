@@ -2,7 +2,7 @@
 
 import BubbleChat from '@/components/BubbleChat'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
-import {Map} from '@/components/Map'
+import Image from 'next/image'
 import Link from 'next/link'
 import {locations} from '../../../constant/location'
 
@@ -17,11 +17,12 @@ export default function LokasiPage() {
             {locations.map((location, index) => (
               <li key={index}>
                 <div className="flex flex-col space-y-1 bg-[#f5f5f5] border p-3 my-3 rounded-md">
-                  <Map
-                    lat={location.lat}
-                    lng={location.lng}
-                    className="w-full h-80"
-                  />
+                  <Image
+                    width={312}
+                    height={312}
+                    src={location.img}
+                    alt={location.name}
+                  ></Image>
                 </div>
 
                 <Link href={location.href}>

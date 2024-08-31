@@ -1,8 +1,9 @@
+'use client'
+import {jasaKami} from '@/constant/features'
 import Image from 'next/image'
 import Link from 'next/link'
+import {AiOutlineArrowLeft, AiOutlineArrowRight} from 'react-icons/ai'
 import '../style/style.scss'
-import {AiOutlineArrowRight, AiOutlineArrowLeft} from 'react-icons/ai'
-import {jasaKami} from '@/constant/features'
 
 const Products = () => {
   const slideLeft = () => {
@@ -20,7 +21,7 @@ const Products = () => {
   }
 
   return (
-    <section id="jasa-kami" className="mx-6 md:my-24 my-6">
+    <section id="jasa-kami" className="mx-6 md:my-6 my-6">
       <div className="container flex justify-between">
         <h2 className="text-xl font-bold">Gallery</h2>
         <div className="gap-3 flex">
