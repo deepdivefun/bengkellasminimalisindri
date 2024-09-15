@@ -31,10 +31,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
       <head></head>
-      <body
-        suppressHydrationWarning={true}
-        className={`${inter.className} static`}
-      >
+      <body className={`${inter.className} static`}>
         <Navbar />
         {children}
         <Footer />
