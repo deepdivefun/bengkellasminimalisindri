@@ -20,7 +20,7 @@ export async function generateMetadata({
   const locationUppercase = location.charAt(0).toUpperCase() + location.slice(1)
 
   return {
-    title: `Bengkel Las ${locationUppercase}`,
+    title: `Bengkel Las ${locationUppercase} Layanan pembuatan dan servis pagar, tangga, kanopi, pintu minimalis, jendela minimalis, railing dor`,
     description: `Layanan pembuatan dan servis pagar, tangga, kanopi, pintu minimalis, jendela minimalis, railing dor, dan lain-lain di ${locationUppercase}.`,
     openGraph: {
       title: `Bengkel Las ${locationUppercase}`,
