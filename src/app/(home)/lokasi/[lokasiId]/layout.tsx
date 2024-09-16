@@ -1,14 +1,28 @@
-import BubbleChat from '@/components/BubbleChat'
+'use client'
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
+
+interface LokasiDetailLayoutProps {
+  children: React.ReactNode
+  params: {
+    lokasiId: string
+  }
+}
 
 export default function LokasiDetailLayout({
-  children
-}: {
-  children: React.ReactNode
-}) {
+  children,
+  params
+}: LokasiDetailLayoutProps) {
+  const canocialLokasi = `https://bengkellasminimalisindri.com/lokasi/${params}`
+
   return (
-    <main>
-      {children}
-      <BubbleChat />
-    </main>
+    <>
+      <Navbar />
+      <>
+        {/* Lokasi ID: {params.lokasiId} */}
+        {children}
+      </>
+      <Footer />
+    </>
   )
 }

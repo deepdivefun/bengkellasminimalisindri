@@ -1,5 +1,5 @@
 {
-  "/(home)/page": "app/(home)/page.js",
   "/(home)/lokasi/page": "app/(home)/lokasi/page.js",
+  "/page": "app/page.js",
   "/(home)/lokasi/[lokasiId]/page": "app/(home)/lokasi/[lokasiId]/page.js"
 }

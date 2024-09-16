@@ -1,5 +1,6 @@
 import Features from '@/components/Features'
 import Products from '@/components/Products'
+import TabContent from '@/components/TabContent'
 import CheckIcon from '@mui/icons-material/Check'
 import {Metadata} from 'next'
 import Image from 'next/image'
@@ -22,15 +23,19 @@ export async function generateMetadata({
   return {
     title: `Bengkel Las ${locationUppercase} Layanan pembuatan dan servis pagar, tangga, kanopi, pintu minimalis, jendela minimalis, railing dor`,
     description: `Layanan pembuatan dan servis pagar, tangga, kanopi, pintu minimalis, jendela minimalis, railing dor, dan lain-lain di ${locationUppercase}.`,
+    robots:
+      'follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large',
     openGraph: {
       title: `Bengkel Las ${locationUppercase}`,
       description: `Bengkel Las ${locationUppercase} Melayani pembuatan dan servis pagar, kanopi, pintu, jendela minimalis, railing dor, balkon, tangga, tralis`,
-      type: 'website',
+      type: 'article',
       locale: 'id',
-      url: 'https://bengkellasminimalisindri.com/',
+      url: `https://bengkellasminimalisindri.com/lokasi/bengkel-las-${location}`,
       siteName: 'bengkellasminimalisindri'
     },
-    metadataBase: new URL(`https://bengkellasminimalisindri.com`)
+    metadataBase: new URL(
+      `https://bengkellasminimalisindri.com/lokasi/bengkel-las-${location}`
+    )
   }
 }
 
@@ -53,6 +58,8 @@ export default async function LokasiDetail({
   if (!location) {
     notFound()
   }
+
+  const canocialLokasi = `https://www.bengkellasminimalisindri.com/lokasi/bengkel-las-${locationName}`
 
   return (
     <>
@@ -77,6 +84,7 @@ export default async function LokasiDetail({
           <div className="col-span-3 my-3 flex justify-center">
             <Image
               alt="gambar-lokasi"
+              priority={true}
               height={1200}
               src={location.img}
               width={1200}
@@ -87,6 +95,7 @@ export default async function LokasiDetail({
           </div>
         </section>
 
+        <TabContent lokasi={locationName} />
         <div>
           <h2 className="text-xl font-semibold">Bahan Meterial</h2>
           <p className="text-justify">
