@@ -8,7 +8,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: {
       default: 'Bengkel Las Bekasi',
-      template: '%s - Bengkel Las Terpercaya Dan Berpengalaman'
+      template: '%s - Servis Dan Pembuatan Baru'
     },
     description:
       'Bengkel Las Bekasi Melayani pembuatan dan servis pagar, kanopi, pintu, jendela minimalis, railing dor, balkon, tangga, tralis',

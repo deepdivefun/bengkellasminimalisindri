@@ -25,20 +25,20 @@ const Products = () => {
       <div className="container flex justify-between">
         <h2 className="mb-2 font-medium text-xl text-center">Gallery</h2>
         <div className="gap-3 flex">
-          <button
+          <div
             className="border rounded-md p-4 text-xl"
             title="scroll left"
             onClick={slideLeft}
           >
             <AiOutlineArrowLeft />
-          </button>
-          <button
+          </div>
+          <div
             className="border rounded-md p-4 text-xl"
             title="scroll right"
             onClick={slideRight}
           >
             <AiOutlineArrowRight />
-          </button>
+          </div>
         </div>
       </div>
       <div className="mt-3">

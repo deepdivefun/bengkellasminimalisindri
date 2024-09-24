@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import BubbleChat from '@/components/BubbleChat'
 import Contact from '@/components/Contact'
 import Features from '@/components/Features'

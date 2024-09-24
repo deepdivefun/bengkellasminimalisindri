@@ -1,8 +1,8 @@
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 
-const BubbleChat = () => {
+export default function BubbleChat() {
   return (
-    <div
+    <section
       style={{
         position: 'fixed',
         bottom: '20px',
@@ -10,22 +10,20 @@ const BubbleChat = () => {
       }}
       className="z-10"
     >
-      <button
+      <div
         style={{backgroundColor: '#25d366'}}
         className="p-2 md:my-0 my-6 text-white rounded-full bg-white border border-green-400 text-black"
       >
         <WhatsAppIcon />
         <a
-          href="https://wa.me/6282249740340"
+          // href="https://wa.me/6282249740340"
           className="mx-1"
           target="_blank"
           rel="noopener noreferrer"
         >
           hubungi Whatsapp Kami
         </a>
-      </button>
-    </div>
+      </div>
+    </section>
   )
 }
-
-export default BubbleChat

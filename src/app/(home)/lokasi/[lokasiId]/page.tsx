@@ -21,7 +21,10 @@ export async function generateMetadata({
   const locationUppercase = location.charAt(0).toUpperCase() + location.slice(1)
 
   return {
-    title: `Bengkel Las ${locationUppercase} Layanan pembuatan dan servis pagar, tangga, kanopi, pintu minimalis, jendela minimalis, railing dor`,
+    title: {
+      default: `Bengkel Las ${locationUppercase}`,
+      template: '%s - Servis Dan Pembuatan Baru'
+    },
     description: `Layanan pembuatan dan servis pagar, tangga, kanopi, pintu minimalis, jendela minimalis, railing dor, dan lain-lain di ${locationUppercase}.`,
     robots:
       'follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large',
