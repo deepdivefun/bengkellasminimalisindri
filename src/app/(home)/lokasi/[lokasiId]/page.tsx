@@ -26,8 +26,6 @@ export async function generateMetadata({
       template: '%s - Servis Dan Pembuatan Baru'
     },
     description: `Layanan pembuatan dan servis pagar, tangga, kanopi, pintu minimalis, jendela minimalis, railing dor, dan lain-lain di ${locationUppercase}.`,
-    robots:
-      'follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large',
     openGraph: {
       title: `Bengkel Las ${locationUppercase}`,
       description: `Bengkel Las ${locationUppercase} Melayani pembuatan dan servis pagar, kanopi, pintu, jendela minimalis, railing dor, balkon, tangga, tralis`,

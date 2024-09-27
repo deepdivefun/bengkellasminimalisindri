@@ -12,8 +12,6 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     description:
       'Bengkel Las Bekasi Melayani pembuatan dan servis pagar, kanopi, pintu, jendela minimalis, railing dor, balkon, tangga, tralis',
-    robots:
-      'follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large',
     openGraph: {
       title: 'Bengkel Las Bekasi',
       description:
