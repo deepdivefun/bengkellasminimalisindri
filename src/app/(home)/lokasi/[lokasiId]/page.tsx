@@ -25,6 +25,9 @@ export async function generateMetadata({
       default: `Bengkel Las ${locationUppercase}`,
       template: '%s - Servis Dan Pembuatan Baru'
     },
+    alternates: {
+      canonical: `https://bengkellasminimalisindri.com/lokasi/bengkel-las-${location}`
+    },
     description: `Layanan pembuatan dan servis pagar, tangga, kanopi, pintu minimalis, jendela minimalis, railing dor, dan lain-lain di ${locationUppercase}.`,
     openGraph: {
       title: `Bengkel Las ${locationUppercase}`,

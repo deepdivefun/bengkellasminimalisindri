@@ -14,7 +14,7 @@ export default function LokasiDetailLayout({
   params
 }: LokasiDetailLayoutProps) {
   const canocialLokasi = `https://bengkellasminimalisindri.com/lokasi/${params}`
-  console.log(params)
+
   return (
     <>
       <Navbar />

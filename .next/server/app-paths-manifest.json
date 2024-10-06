@@ -1,5 +1,6 @@
 {
   "/page": "app/page.js",
   "/(home)/lokasi/page": "app/(home)/lokasi/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/(home)/lokasi/[lokasiId]/page": "app/(home)/lokasi/[lokasiId]/page.js"
 }
