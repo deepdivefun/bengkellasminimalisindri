@@ -9,10 +9,10 @@ const Contact = () => {
         </div>
         <h2 className="md:text-sm text-justify tracking-wide">
           Selamat datang di Indri Teknik Las - mitra terpercaya Anda untuk semua
-          kebutuhan las dan konstruksi logam. Dengan pengalaman bertahun-tahun
-          di industri ini, kami bangga dapat memberikan layanan berkualitas
-          tinggi yang memenuhi standar tertinggi dalam hal keandalan, kecepatan,
-          dan estetika.
+          kebutuhan las dan konstruksi. Dengan pengalaman bertahun-tahun di
+          industri ini, kami bangga dapat memberikan layanan berkualitas tinggi
+          yang memenuhi standar tertinggi dalam hal keandalan, kecepatan, dan
+          estetika.
         </h2>
       </div>
     </section>

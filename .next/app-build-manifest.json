@@ -1,10 +1,10 @@
 {
   "pages": {
-    "/page": [
+    "/(home)/blog/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/css/app/(home)/blog/[slug]/page.css",
+      "static/chunks/app/(home)/blog/[slug]/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -12,21 +12,16 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/(home)/lokasi/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(home)/lokasi/page.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
-    "/(home)/lokasi/[lokasiId]/page": [
+    "/(home)/blog/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(home)/lokasi/[lokasiId]/page.css",
-      "static/chunks/app/(home)/lokasi/[lokasiId]/page.js"
-    ],
-    "/(home)/lokasi/[lokasiId]/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(home)/lokasi/[lokasiId]/layout.js"
+      "static/chunks/app/(home)/blog/page.js"
     ]
   }
 }

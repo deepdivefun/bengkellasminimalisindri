@@ -50,7 +50,10 @@ export default function TabContent({lokasi}: TabPanelProps) {
         <Tabs
           value={value}
           onChange={handleChange}
-          aria-label="basic tabs example"
+          variant="scrollable"
+          scrollButtons
+          allowScrollButtonsMobile
+          aria-label="scrollable force tabs example"
         >
           <Tab
             href={customHrefTab}

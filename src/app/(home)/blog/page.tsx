@@ -1,50 +1,42 @@
-// import getAllBlogPosts from '@/lib/queries/getAllBlogPosts'
+import BubbleChat from '@/components/BubbleChat'
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
+import locations from '@/constant/location'
+import Link from 'next/link'
 
-export default async function Blog() {
-  // const posts = await getAllBlogPosts()
-
-  // if (!posts || !posts.length) {
-  //   notFound()
-  // }
-
+export default function Blog() {
   return (
-    <main>
-      <article>
-        <h1></h1>
-      </article>
-      <aside>
-        {/* <h2>Latest Posts</h2> */}
-        {/* <div className="flex mx-12 flex-wrap gap-8">
-          {posts.map((post: Post) => (
-            <article className="w-72" key={post.databaseId}>
-              <Image
-                alt={post.featuredImage.node.altText}
-                height={post.featuredImage.node.mediaDetails.height}
-                src={post.featuredImage.node.sourceUrl}
-                width={post.featuredImage.node.mediaDetails.width}
-                priority={true}
-              />
-              <Link href={`/blog/${post.slug}`}>
-                <h2
-                  className="my-3 text-xl font-semibold"
-                  dangerouslySetInnerHTML={{__html: post.title}}
-                />
-              </Link>
-              <div
-                className="text-justify"
-                dangerouslySetInnerHTML={{__html: post.excerpt}}
-              />
-              <Link className="button" href={`/blog/${post.slug}`}>
-                <div className="my-3">
-                  <p className="inline-block text-sm bg-zinc-900 text-center px-2 py-3 rounded text-white">
-                    Klik Selengkapnya...
-                  </p>
-                </div>
-              </Link>
-            </article>
-          ))}
-        </div> */}
-      </aside>
-    </main>
+    <>
+      <Navbar />
+      <main className="min-h-screen">
+        <section>
+          <div className="padding-container my-6">
+            <h1 className="text-xl font-semibold underline font-medium mb-6">
+              Layanan Lokasi Kami
+            </h1>
+            <ul className="md:grid grid-cols-3 gap-3 mb-6">
+              {locations.map((location, index) => (
+                <li className="border-2 p-3 m-3 rounded-md" key={index}>
+                  <Link href={`blog/${location.href}`}>
+                    <div className="grid gap-3">
+                      <h2 className="text-xl font-semibold">{location.name}</h2>
+                      <h3 className="text-sm underline">
+                        Klik di sini untuk informasi lebih lanjut
+                      </h3>
+                      <h3 className="underline">
+                        Atau klik disini untuk hubungi Whatsapp Kami
+                      </h3>
+                    </div>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        <BubbleChat />
+      </main>
+      <Footer />
+    </>
   )
 }
