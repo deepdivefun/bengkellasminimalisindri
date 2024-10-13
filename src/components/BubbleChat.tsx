@@ -16,7 +16,7 @@ export default function BubbleChat() {
       >
         <WhatsAppIcon />
         <a
-          // href="https://wa.me/6282249740340"
+          href="https://wa.me/6282249740340"
           className="mx-1"
           target="_blank"
           rel="noopener noreferrer"

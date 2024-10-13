@@ -55,7 +55,7 @@ const Products = () => {
                     className="w-96 h-60"
                     src={item.img}
                     alt="product"
-                    priority={true}
+                    priority={false}
                   />
                 </div>
                 <h3>{item.description}</h3>

@@ -10,6 +10,9 @@ export async function generateMetadata(): Promise<Metadata> {
       default: 'Bengkel Las Bekasi',
       template: '%s - Servis Dan Pembuatan Baru'
     },
+    alternates: {
+      canonical: `https://bengkellasminimalisindri.com`
+    },
     description:
       'Bengkel Las Bekasi Melayani pembuatan dan servis pagar, kanopi, pintu, jendela minimalis, railing dor, balkon, tangga, tralis',
     openGraph: {
@@ -19,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
       type: 'website',
       locale: 'id',
       url: 'https://bengkellasminimalisindri.com',
-      siteName: 'bengkellasminimalisindri'
+      siteName: 'Bengkel Las Minimalis Indri'
     },
     metadataBase: new URL(`https://bengkellasminimalisindri.com`)
   }
