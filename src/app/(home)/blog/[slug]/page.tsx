@@ -139,7 +139,7 @@ export default async function Post({params}: {params: {slug: string}}) {
         '@type': 'WebPage',
         '@id': `https://www.bengkellasminimalisindri.com/blog/${location?.name}/#webpage`,
         url: `https://www.bengkellasminimalisindri.com/blog/${location?.name}/`,
-        name: 'Bengkel Las Bekasi Dengan Tukang Las Berpengalaman',
+        name: `Bengkel Las ${location?.name} Dengan Tukang Las Berpengalaman`,
         datePublished: '2024-10-26T15:07:42+07:00',
         dateModified: '2024-10-26T18:30:12+07:00',
         isPartOf: {'@id': 'https://www.bengkellasminimalisindri.com/#website'},
@@ -170,8 +170,8 @@ export default async function Post({params}: {params: {slug: string}}) {
       },
       {
         '@type': 'BlogPosting',
-        headline: 'Bengkel Las Bekasi Dengan Tukang Las Berpengalaman',
-        keywords: 'Bengkel Las Bekasi',
+        headline: `Bengkel Las ${location?.name} Dengan Tukang Las Berpengalaman`,
+        keywords: `Bengkel Las ${location?.name}, jasa las, bahan bangunan, pembuatan pagar, stainless steel, besi, galvanis, baja ringan, aluminium, bengkel las pagar, bengkel las terdekat, tukang las terdekat, bengkel las, tukang las, tukang las pagar, tukang las kanopi, las kanopi, las pintu, jasa las profesional, tukang las berpengalaman, pembuatan kanopi custom, pembuatan pagar minimalis, servis pagar besi, tukang las jakarta, las stainless steel, pembuatan struktur baja, tukang las untuk proyek bangunan, jasa las terpercaya, bengkel las berkualitas, tukang las murah, las pagar besi, jasa fabrication metal, tukang las untuk renovasi `,
         datePublished: '2024-10-26T15:07:42+07:00',
         dateModified: '2024-10-26T18:30:12+07:00',
         articleSection: 'Bengkel Las, Blog',
@@ -182,9 +182,8 @@ export default async function Post({params}: {params: {slug: string}}) {
         publisher: {
           '@id': 'https://www.bengkellasminimalisindri.com/#organization'
         },
-        description:
-          'Bengkel Las Bekasi mengerjakan kanopi ✔ pintu besi ✔ pagar besi ✔ teralis ✔ railing ✔ tangga ✔ menara air ✔',
-        name: 'Bengkel Las Bekasi Dengan Tukang Las Berpengalaman',
+        description: `Bengkel Las ${location?.name} mengerjakan kanopi ✔ pintu besi ✔ pagar besi ✔ teralis ✔ railing ✔ tangga ✔ menara air ✔`,
+        name: `Bengkel Las ${location?.name} Dengan Tukang Las Berpengalaman`,
         '@id': `https://www.bengkellasminimalisindri.com/blog/${location?.name}/#richSnippet`,
         isPartOf: {
           '@id': `https://www.bengkellasminimalisindri.com/blog/${location?.name}/#webpage`
