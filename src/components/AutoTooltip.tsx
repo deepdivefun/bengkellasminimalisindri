@@ -1,5 +1,5 @@
 'use client'
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
+import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import Tooltip from '@mui/material/Tooltip'
 import {useEffect, useState} from 'react'
 
@@ -25,7 +25,7 @@ const AutoTooltip = () => {
   useEffect(() => {
     const timerId = setTimeout(() => {
       setOpen(false)
-    }, 5500) // Tooltip ditampilkan selama 2,5 detik
+    }, 6500) // Tooltip ditampilkan selama 2,5 detik
 
     return () => clearTimeout(timerId) // Bersihkan timer saat komponen unmount
   }, [currentTooltip])
@@ -55,12 +55,20 @@ const AutoTooltip = () => {
       }}
       style={{
         position: 'fixed',
-        bottom: '20px',
+        bottom: '30px',
         right: '30px'
       }}
-      className="z-10 mb-6 lg:mb-3"
+      className="z-11 mb-6 lg:mb-3"
     >
-      <LocalPhoneIcon className="text-3xl" />
+      <a
+        href="https://wa.me/6282249740340"
+        className="mx-1 text-white bg-green-600 p-2 rounded-full"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <WhatsAppIcon />
+        hubungi Whatsapp Kami
+      </a>
     </Tooltip>
   )
 }
