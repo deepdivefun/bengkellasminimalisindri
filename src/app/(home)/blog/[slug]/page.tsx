@@ -1,3 +1,5 @@
+import AutoTooltip from '@/components/AutoTooltip'
+import BasicBreadcrumbs from '@/components/Breadcrumb'
 import BubbleChat from '@/components/BubbleChat'
 import Contact from '@/components/Contact'
 import Features from '@/components/Features'
@@ -205,7 +207,13 @@ export default async function Post({params}: {params: {slug: string}}) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
       />
-      <Navbar />
+      <Navbar title="" />
+      <BasicBreadcrumbs
+        items={[
+          {href: '/', text: 'Beranda'},
+          {href: `${location?.href}`, text: `Bengkel Las ${location?.name}`}
+        ]}
+      />
       <main>
         {location ? (
           <>
@@ -227,6 +235,7 @@ export default async function Post({params}: {params: {slug: string}}) {
           <Products />
         </aside>
         <Contact />
+        <AutoTooltip />
         <BubbleChat />
       </main>
       <Footer />

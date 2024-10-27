@@ -1,3 +1,4 @@
+import BasicBreadcrumbs from '@/components/Breadcrumb'
 import BubbleChat from '@/components/BubbleChat'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
@@ -7,10 +8,17 @@ import Link from 'next/link'
 export default function Blog() {
   return (
     <>
-      <Navbar />
+      <Navbar title="" />
+      <BasicBreadcrumbs
+        items={[
+          {href: '/', text: 'Beranda'},
+          {href: '/blog', text: 'Blog'}
+          // {text: 'Breadcrumbs'} // tanpa href untuk item terakhir
+        ]}
+      />
       <main className="min-h-screen">
         <section>
-          <div className="padding-container my-6">
+          <div className="padding-container mb-6 mt-3">
             <h1 className="text-xl font-semibold underline font-medium mb-6">
               Layanan Lokasi Kami
             </h1>
@@ -33,7 +41,6 @@ export default function Blog() {
             </ul>
           </div>
         </section>
-
         <BubbleChat />
       </main>
       <Footer />

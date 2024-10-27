@@ -1,4 +1,6 @@
 // 'use client'
+import AutoTooltip from '@/components/AutoTooltip'
+import BasicBreadcrumbs from '@/components/Breadcrumb'
 import BubbleChat from '@/components/BubbleChat'
 import Contact from '@/components/Contact'
 import Features from '@/components/Features'
@@ -169,7 +171,8 @@ export default async function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
       />
-      <Navbar />
+      <Navbar title="Indri Teknik Las" />
+      <BasicBreadcrumbs items={[{href: '/', text: ''}]} />
       <main>
         <Hero />
         <Features />
@@ -178,6 +181,7 @@ export default async function Home() {
           <Products />
         </aside>
         <Contact />
+        <AutoTooltip />
         <BubbleChat />
       </main>
       <Footer />

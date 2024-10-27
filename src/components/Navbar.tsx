@@ -4,7 +4,13 @@ import SearchIcon from '@mui/icons-material/Search'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import Link from 'next/link'
 
-const Navbar = () => {
+interface NavbarProps {
+  title?: string
+}
+
+const Navbar = (props: NavbarProps) => {
+  const {title} = props
+
   return (
     <header>
       <div className="flexBetween md:px-10 px-5 text-[12px] item-center relative z-30 py-2 bg-black text-sm">
@@ -21,9 +27,7 @@ const Navbar = () => {
 
       <nav className="md:flexBetween my-3 md:mx-10 mx-5 relative z-30 bg-white">
         <div className="flex">
-          <h3 className="font-bold ml-1 content-center text-xl">
-            Indri Teknik Las
-          </h3>
+          <h3 className="font-bold ml-1 content-center text-xl">{title}</h3>
           <div className="hidden relative">
             <input
               type="text"

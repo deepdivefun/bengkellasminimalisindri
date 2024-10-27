@@ -120,27 +120,33 @@ export default function TabContent({lokasi}: TabPanelProps) {
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={1}>
-        <h2>Bengkel Las {lokasi}</h2>
-        <p>
-          Melayani pembuatan dan servis pagar, kanopi, pintu, jendela minimalis,
-          railing dor, balkon, tangga, tralis.
-        </p>
+        <section>
+          <h2>Bengkel Las {lokasi}</h2>
+          <p>
+            Melayani pembuatan dan servis pagar, kanopi, pintu, jendela
+            minimalis, railing dor, balkon, tangga, tralis.
+          </p>
+        </section>
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={2}>
-        <h2>Servis</h2>
-        <p>
-          Servis pagar, kanopi, pintu, jendela minimalis, railing dor, balkon,
-          tangga, tralis, dan lain-lain.
-        </p>
+        <section>
+          <h2>Servis</h2>
+          <p>
+            Servis pagar, kanopi, pintu, jendela minimalis, railing dor, balkon,
+            tangga, tralis, dan lain-lain.
+          </p>
+        </section>
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={3}>
-        <h2>Pembuatan</h2>
-        <p>
-          Pembuatan pagar, kanopi, pintu, jendela minimalis, railing dor,
-          balkon, tangga, tralis, dan lain-lain.
-        </p>
+        <section>
+          <h2>Pembuatan</h2>
+          <p>
+            Pembuatan pagar, kanopi, pintu, jendela minimalis, railing dor,
+            balkon, tangga, tralis, dan lain-lain.
+          </p>
+        </section>
       </CustomTabPanel>
     </Box>
   )
