@@ -1,6 +1,5 @@
 import AutoTooltip from '@/components/AutoTooltip'
 import BasicBreadcrumbs from '@/components/Breadcrumb'
-import BubbleChat from '@/components/BubbleChat'
 import Contact from '@/components/Contact'
 import Features from '@/components/Features'
 import Footer from '@/components/Footer'
@@ -236,7 +235,6 @@ export default async function Post({params}: {params: {slug: string}}) {
         </aside>
         <Contact />
         <AutoTooltip />
-        <BubbleChat />
       </main>
       <Footer />
     </>

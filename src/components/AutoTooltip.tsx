@@ -55,14 +55,14 @@ const AutoTooltip = () => {
       }}
       style={{
         position: 'fixed',
-        bottom: '30px',
+        bottom: '100px',
         right: '30px'
       }}
       className="z-11 mb-6 lg:mb-3"
     >
       <a
         href="https://wa.me/6282249740340"
-        className="mx-1 text-white bg-green-600 p-2 rounded-full"
+        className="mx-1 text-white bg-green-600 p-2 rounded-full z-12"
         target="_blank"
         rel="noopener noreferrer"
       >
