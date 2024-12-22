@@ -56,9 +56,10 @@ const AutoTooltip = () => {
       style={{
         position: 'fixed',
         bottom: '100px',
-        right: '30px'
+        right: '30px',
+        zIndex: '100'
       }}
-      className="z-11 mb-6 lg:mb-3"
+      className="z-100 mb-6 lg:mb-3"
     >
       <a
         href="https://wa.me/6282249740340"

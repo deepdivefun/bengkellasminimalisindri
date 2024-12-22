@@ -8,11 +8,11 @@ export default function BubbleChat() {
         bottom: '20px',
         right: '20px'
       }}
-      className="z-10"
+      className="z-100"
     >
       <div
         style={{backgroundColor: '#25d366'}}
-        className="p-2 md:my-0 my-6 text-white rounded-full bg-white border border-green-400 text-black"
+        className="z-100 p-2 md:my-0 my-6 text-white rounded-full bg-white border border-green-400 text-black"
       >
         <WhatsAppIcon />
         <a

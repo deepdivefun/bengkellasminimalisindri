@@ -49,6 +49,12 @@ const Navbar = (props: NavbarProps) => {
             <li className="hover:underline">
               <Link href="/">Beranda</Link>
             </li>
+            <li className="hover:underline">
+              <Link href="/gallery">Gallery</Link>
+            </li>
+            <li className="hover:underline">
+              <Link href="/contact-us">Kontak Kami</Link>
+            </li>
           </ul>
         </div>
       </nav>

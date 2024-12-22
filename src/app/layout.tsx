@@ -22,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
       type: 'website',
       locale: 'id',
       url: 'https://bengkellasminimalisindri.com',
-      siteName: 'Bengkel Las Minimalis Indri'
+      siteName: 'Bengkel Las Bekasi'
     },
     metadataBase: new URL(`https://bengkellasminimalisindri.com`)
   }

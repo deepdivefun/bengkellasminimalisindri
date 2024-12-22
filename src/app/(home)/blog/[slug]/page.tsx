@@ -23,14 +23,16 @@ export async function generateMetadata({params}: {params: {slug: string}}) {
       alternates: {
         canonical: `https://bengkellasminimalisindri.com/blog/${location.href}`
       },
-      description: `Layanan pembuatan dan servis pagar, tangga, kanopi, pintu minimalis, jendela minimalis, railing dor, dan lain-lain di ${location.name}.`,
+      robots:
+        'follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large',
+      description: `Bengkel Las ${location.name} Melayani pembuatan dan servis pagar, kanopi, pintu, jendela minimalis, railing dor, balkon, tangga, tralis`,
       openGraph: {
         title: `Bengkel Las ${location.name}`,
         description: `Bengkel Las ${location.name} Melayani pembuatan dan servis pagar, kanopi, pintu, jendela minimalis, railing dor, balkon, tangga, tralis.`,
         type: 'article',
         locale: 'id',
         url: `https://bengkellasminimalisindri.com/blog/${location.href}`,
-        siteName: 'Bengkel Las Minimalis Indri'
+        siteName: `Bengkel Las ${location.name}`
       },
       metadataBase: new URL(
         `https://bengkellasminimalisindri.com/blog/${location.href}`
@@ -128,10 +130,26 @@ export default async function Post({params}: {params: {slug: string}}) {
         itemListElement: [
           {
             '@type': 'ListItem',
-            position: '1',
+            position: 1,
             item: {
               '@id': 'https://www.bengkellasminimalisindri.com',
               name: 'Beranda'
+            }
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            item: {
+              '@id': 'https://bengkellasminimalisindri.com/blog/',
+              name: 'Bengkel Las'
+            }
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            item: {
+              '@id': `https://bengkellasminimalisindri.com/blog/${location?.href}`,
+              name: `${location?.name}`
             }
           }
         ]
