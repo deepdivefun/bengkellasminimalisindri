@@ -1,4 +1,5 @@
 import AutoTooltip from '@/components/AutoTooltip'
+import BlogList from '@/components/BlogList'
 import BasicBreadcrumbs from '@/components/Breadcrumb'
 import Contact from '@/components/Contact'
 import Features from '@/components/Features'
@@ -253,6 +254,7 @@ export default async function Post({params}: {params: {slug: string}}) {
         </aside>
         <Contact />
         <AutoTooltip />
+        <BlogList />
       </main>
       <Footer />
     </>

@@ -1,10 +1,9 @@
 {
   "pages": {
-    "/page": [
+    "/(home)/blog/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/chunks/app/(home)/blog/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -12,10 +11,17 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/(home)/blog/page": [
+    "/(home)/gallery/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(home)/blog/page.js"
+      "static/css/app/(home)/gallery/page.css",
+      "static/chunks/app/(home)/gallery/page.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
     "/(home)/blog/[slug]/page": [
       "static/chunks/webpack.js",
@@ -23,37 +29,10 @@
       "static/css/app/(home)/blog/[slug]/page.css",
       "static/chunks/app/(home)/blog/[slug]/page.js"
     ],
-    "/(home)/gallery/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(home)/gallery/page.css",
-      "static/chunks/app/(home)/gallery/page.js"
-    ],
     "/(home)/contact-us/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(home)/contact-us/page.js"
-    ],
-    "/(admin)/admin/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(admin)/admin/page.js"
-    ],
-    "/(admin)/admin/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(admin)/admin/layout.css",
-      "static/chunks/app/(admin)/admin/layout.js"
-    ],
-    "/(admin)/admin/dashboard/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(admin)/admin/dashboard/page.js"
-    ],
-    "/(admin)/admin/authorize/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(admin)/admin/authorize/page.js"
     ]
   }
 }
