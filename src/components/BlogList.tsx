@@ -1,5 +1,6 @@
 'use client'
 import locations from '@/constant/location'
+import Link from 'next/link'
 
 import {useState} from 'react'
 
@@ -53,9 +54,9 @@ const BlogList = () => {
       </div>
       <div className="flex space-x-4 gap-6">
         {visibleBlogs.map((blog) => (
-          <a
+          <Link
             key={blog.name}
-            href={`blog/${blog.href}`}
+            href={`/blog/${blog.href}`}
             className="w-auto bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-10"
           >
             <div className="p-4">
@@ -78,7 +79,7 @@ const BlogList = () => {
                 Baca Selengkapnya
               </button>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </div>
