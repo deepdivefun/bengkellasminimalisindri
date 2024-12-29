@@ -1,7 +1,12 @@
+import AutoTooltip from '@/components/AutoTooltip'
 import BasicBreadcrumbs from '@/components/Breadcrumb'
-import BubbleChat from '@/components/BubbleChat'
+import Contact from '@/components/Contact'
+import Features from '@/components/Features'
 import Footer from '@/components/Footer'
+import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
+import Products from '@/components/Products'
+import TabContent from '@/components/TabContent'
 import locations from '@/constant/location'
 import Link from 'next/link'
 
@@ -17,6 +22,14 @@ export default function Blog() {
         ]}
       />
       <main className="min-h-screen">
+        <Hero />
+        <Features />
+        <TabContent lokasi="" />
+        <aside>
+          <Products />
+        </aside>
+        <Contact />
+        <AutoTooltip />
         <section>
           <div className="padding-container mb-6 mt-3">
             <h1 className="text-xl font-semibold underline font-medium mb-6">
@@ -41,7 +54,6 @@ export default function Blog() {
             </ul>
           </div>
         </section>
-        <BubbleChat />
       </main>
       <Footer />
     </>

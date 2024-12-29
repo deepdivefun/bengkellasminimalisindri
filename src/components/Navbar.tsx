@@ -15,10 +15,10 @@ const Navbar = (props: NavbarProps) => {
     <header>
       <div className="flexBetween md:px-10 px-5 text-[12px] item-center relative z-30 py-2 bg-black text-sm">
         <div className="flex gap-6">
-          <a href="tel:+6282249740340" className="text-white">
-            0822 4974 0340 <CallIcon style={{color: 'white'}} />{' '}
+          <a href="tel:+6281283993386" className="text-white">
+            0812 8399 3386 <CallIcon style={{color: 'white'}} />{' '}
           </a>
-          <a href="https://wa.me/6282249740340" className="text-white">
+          <a href="https://wa.me/6281283993386" className="text-white">
             WhatsApp <WhatsAppIcon style={{color: 'white'}} />{' '}
           </a>
         </div>

@@ -104,7 +104,7 @@ export default async function Post({params}: {params: {slug: string}}) {
         ],
         location: {'@id': 'https://www.bengkellasminimalisindri.com/#place'},
         image: {'@id': 'https://www.bengkellasminimalisindri.com/#logo'},
-        telephone: '+6282249740340'
+        telephone: '+6281283993386'
       },
       {
         '@type': 'WebSite',

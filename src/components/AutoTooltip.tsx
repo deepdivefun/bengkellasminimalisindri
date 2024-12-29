@@ -62,7 +62,7 @@ const AutoTooltip = () => {
       className="z-100 mb-6 lg:mb-3"
     >
       <a
-        href="https://wa.me/6282249740340"
+        href="https://wa.me/6281283993386"
         className="mx-1 text-white bg-green-600 p-2 rounded-full z-12"
         target="_blank"
         rel="noopener noreferrer"

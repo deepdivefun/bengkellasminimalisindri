@@ -37,7 +37,7 @@ const ContactPage = () => {
               <p>
                 <strong>Nomor Telepon:</strong>{' '}
                 <a
-                  href="tel:+6282249740340"
+                  href="tel:+6281283993386"
                   className="text-blue-600 hover:underline"
                 >
                   +62 822 4974 0340
